@@ -1,0 +1,180 @@
+@import 'sass/variables';
+@import 'sass/breakpoints';
+@import 'sass/source';
+
+.mainHeaderBack{
+    background-color: $backColorLight3;
+    .mainHeader{
+        display: flex;
+        align-items: center;
+        .logoSection{
+            margin-left: 30px;
+        }
+        .menuSection{
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                li{
+                    &::before{
+                        content: none;
+                    }
+                    a{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .headerIcon{
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            .searchIcon{
+                width: 45px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        a{
+            display: flex;
+            align-items: center;
+            span{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.introSectionBack{
+    background-color: $backColorLight3;
+    .introSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .introSectionDesc{
+            width: 40%;
+        }
+        .introSectionImg{
+            width: 45%;
+        }
+    }
+}
+.mainFooterBack{
+    background-color: #f4f7fe;
+    padding: 50px 0;
+    @include xs{
+        font-size: 14px;
+    }
+    .mainFooter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: #565656;
+        .footerColumn1{
+            width: 35%;
+            @include xs{
+                width: 100%;
+            }
+            svg{
+                height: 70px;
+                margin: 15px 0;
+            }
+            p{
+                text-align: justify;
+                width: 80%;
+                @include xs{
+                    width: 100%;
+                }
+            }
+        }
+        .footerColumn2{
+            width: max-content;
+            li{
+                margin: 10px 0;
+                a{
+                    color: #565656;
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #187dbb !important;
+                    }
+                }
+            }
+        }
+        .footerColumn3{
+            width: 25%;
+            @include xs{
+                width: 60%;
+            }
+            a{
+                color: #565656;
+                transition: all 0.4s;
+                &:hover{
+                    color: #187dbb !important;
+                }
+                p{
+                    width: 80%;
+                    @include xs{
+                        width: auto;
+                    }
+                }
+            }
+            .contactFooter{
+                li{
+                    margin: 7px 0;
+                    a{
+                        color: #565656;
+                        margin-right: 4px;
+                        &:hover{
+                            color: #187dbb !important;
+                        }
+                    }
+                }
+            }
+        }
+        .eNemadParent{
+            margin: 20px 0 !important;
+        }
+        li{
+            list-style-type: none;
+        }
+    }
+}
+.footerCopyrightBack{
+    padding: 15px 0;
+    .footerCopyright{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 60%;
+        @include xs{
+            justify-content: center;
+            width: auto;
+        }
+        p{
+            margin: 0;
+            font-size: 14px;
+            font-weight: 300;
+            @include xs{
+                order: 2;
+            }
+        }
+        .footerCopyrightIcons{
+            display: flex;
+            align-items: center;
+            @include xs{
+                order: 1;
+                margin-bottom: 10px;
+            }
+            a{
+                margin: 0 5px;
+                display: block;
+                svg{
+                    display: block;
+                }
+            }
+        }
+    }
+}

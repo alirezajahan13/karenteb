@@ -1,0 +1,42 @@
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Hairline.woff2'); font-weight: 50;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Thin.woff2'); font-weight: 100;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-UltraLight.woff2'); font-weight: 200;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Light.woff2'); font-weight: 300;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Regular.woff2'); font-weight: 400;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Medium.woff2'); font-weight: 500;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-DemiBold.woff2'); font-weight: 600;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Bold.woff2'); font-weight: 700;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-ExtraBold.woff2'); font-weight: 800;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Black.woff2'); font-weight: 900;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-ExtraBlack.woff2'); font-weight: 910;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Heavy.woff2'); font-weight: 950;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-fat.woff2'); font-weight: 990;}
+
+
+//Text Color
+$textColorDark: #0B3152;
+$textColorDark2: #205685;
+$textColorLowSat: #565656;
+$textColorLight: #828282;
+
+//Main Color
+$mainColorDark: #187dba;
+$mainColorLight: #399edb;
+$mainColorLight2: #ebecf0;
+$mainColor: #197dbb;
+$offColor: #7fd1ae;
+
+//Back Color
+$backColorLight: #FCFCFD;
+$backColorLight2: #f0f5fc;
+$backColorLight3: #f4f7fe;
+$backColorDark2: #d4ddf8;
+
+
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}  
+}
