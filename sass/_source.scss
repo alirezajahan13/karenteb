@@ -38,7 +38,7 @@ h6{
 }
 h1,h2,h3,h4,h5,h6{
 	font-weight: 800;
-    color: $textColorLowSat;
+    color: $textColorDark3;
 }
 .lowMargined{
 	margin: 7px 0;
@@ -76,10 +76,10 @@ h1,h2,h3,h4,h5,h6{
 .generalHeading{
 	h1,h2,h3,h4,h5,h6{
 		margin: 0;
-        color: $textColorLowSat;
+        color: $textColorDark3;
 	}
 	span{
-		font-size: 17px;
+		font-size: 14px;
 		font-weight: 300;
 		margin-top: 5px;
 		display: block;

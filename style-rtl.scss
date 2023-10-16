@@ -178,3 +178,134 @@
         }
     }
 }
+.counterNumbers{
+    background-color: $backColorDark;
+    position: relative;
+    padding: 10px;
+    img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .counterNumbersInner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 150px;
+        align-items: center;
+        position: relative;
+        .counterItem{
+            color: #fff !important;
+            .counterTitle{
+                font-size: 18px;
+                margin-top: 7px;
+                text-align: center;
+            }
+            .counterNumber{
+                text-align: center;
+                span{
+                    font-size: 35px;
+                    font-weight: 700;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+.descProductSectionHomeBack{
+    background-color: $backColorLight3;
+    position: relative;
+    .descProductSectionHome{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .descProductText{
+            width: 35%;
+            p{
+                text-align: justify;
+            }
+        }
+        .descProductImg{
+            width: 35%;
+        }
+    }
+    .differentSection{
+        .descProductText{
+            order: 2;
+        }
+        .descProductImg{
+            order: 1;
+        }
+    }
+}
+.serviceSectionHomeBack{
+    background-color: $backColorLight3;
+    .serviceSectionHome{
+        .serviceBoxParent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .serviceBoxs{
+                width: 18%;
+                text-align: center;
+                padding: 10px 20px;
+                .iconPart{
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    border-radius: 100%;
+                    background-color: #fff;
+                }
+                span{
+                    color: $textColorLowSat;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.aboutUsSectionHomeBack{
+    background-color: $backColorLight3;
+    .aboutUsSectionHome{
+        .aboutUsSectionFlex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            .aboutUsSections{
+                width: 35%;
+                flex-direction: column;
+                display: flex;
+                .aboutUsP{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .iconPart{
+                        width: 35px;
+                        height: 35px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // margin: auto;
+                        border-radius: 100%;
+                        background-color: #fff;
+                    }
+                    span{
+                        color: $textColorLowSat;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
