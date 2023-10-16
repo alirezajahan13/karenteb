@@ -110,7 +110,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
-  color: #565656;
+  color: #0a3152;
 }
 
 .lowMargined {
@@ -159,10 +159,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .generalHeading h1, .generalHeading h2, .generalHeading h3, .generalHeading h4, .generalHeading h5, .generalHeading h6 {
   margin: 0;
-  color: #565656;
+  color: #0a3152;
 }
 .generalHeading span {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 300;
   margin-top: 5px;
   display: block;
@@ -806,4 +806,132 @@ select option {
 }
 .footerCopyrightBack .footerCopyright .footerCopyrightIcons a svg {
   display: block;
+}
+
+.counterNumbers {
+  background-color: #4696c7;
+  position: relative;
+  padding: 10px;
+}
+.counterNumbers img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.counterNumbers .counterNumbersInner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 150px;
+  align-items: center;
+  position: relative;
+}
+.counterNumbers .counterNumbersInner .counterItem {
+  color: #fff !important;
+}
+.counterNumbers .counterNumbersInner .counterItem .counterTitle {
+  font-size: 18px;
+  margin-top: 7px;
+  text-align: center;
+}
+.counterNumbers .counterNumbersInner .counterItem .counterNumber {
+  text-align: center;
+}
+.counterNumbers .counterNumbersInner .counterItem .counterNumber span {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.descProductSectionHomeBack {
+  background-color: #f4f7fe;
+  position: relative;
+}
+.descProductSectionHomeBack .descProductSectionHome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.descProductSectionHomeBack .descProductSectionHome .descProductText {
+  width: 35%;
+}
+.descProductSectionHomeBack .descProductSectionHome .descProductText p {
+  text-align: justify;
+}
+.descProductSectionHomeBack .descProductSectionHome .descProductImg {
+  width: 35%;
+}
+.descProductSectionHomeBack .differentSection .descProductText {
+  order: 2;
+}
+.descProductSectionHomeBack .differentSection .descProductImg {
+  order: 1;
+}
+
+.serviceSectionHomeBack {
+  background-color: #f4f7fe;
+}
+.serviceSectionHomeBack .serviceSectionHome .serviceBoxParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs {
+  width: 18%;
+  text-align: center;
+  padding: 10px 20px;
+}
+.serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs .iconPart {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs span {
+  color: #565656;
+  font-size: 14px;
+}
+
+.aboutUsSectionHomeBack {
+  background-color: #f4f7fe;
+}
+.aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex .aboutUsSections {
+  width: 35%;
+  flex-direction: column;
+  display: flex;
+}
+.aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex .aboutUsSections .aboutUsP {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex .aboutUsSections .aboutUsP .iconPart {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex .aboutUsSections .aboutUsP span {
+  color: #565656;
+  margin-right: 8px;
 }/*# sourceMappingURL=style-rtl.css.map */
