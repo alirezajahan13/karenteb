@@ -197,7 +197,7 @@ get_header();
     </div>
     <img src="<?php bloginfo('template_directory')?>/img/back-vectors/Vector.svg" alt="">
 </div>
-<div class="freeDemoSectionHomeBack">
+<div class="freeDemoSectionHomeBack sectionPadding">
     <div class="freeDemoSectionHome mainView">
         <div class="sectionRight">
             <h3>درخواست دمو رایگان</h3>
@@ -206,6 +206,32 @@ get_header();
         </div>
         <div class="sectionLeft">
             <img src="<?php echo get_template_directory_uri() ?>/img/new-transparent-for-request-min.png" alt="کارن-طب">
+        </div>
+    </div>
+</div>
+<div class="blogPostSectionHomeBack sectionPadding">
+    <div class="blogPostSectionHome mainView">
+        <div class="generalHeading highMargined centeredText">
+            <h2>آخرین نوشته های بلاگ</h2>
+            <span>تولید محصولات با کیفیت مطابق با آخرین استانداردهای روز دنیا</span>
+        </div>
+        <div class="blogPostHome">
+            <div class="sectionOne">
+                <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/x-c-0072.jpg" alt=""></a>
+            </div>
+            <div class="sectionTwo">
+                <div class="sectionThreeFourP">
+                    <div class="sectionThree">
+                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0379.jpg" alt=""></a>
+                    </div>
+                    <div class="sectionFour">
+                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/xgunhero.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="">
+                    <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0324.jpg" alt=""></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
