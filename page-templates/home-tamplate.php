@@ -11,7 +11,7 @@ get_header();
     <div class="introSection mainView">
         <div class="introSectionDesc">
             <div class="generalHeading bigHeading highMargined">
-                <h1>تنها تولیدکننده دستگاه های کربوکسی تراپی و پلاسماپن</h1>
+                <h1>تنها تولیدکننده دستگاه های <span>کربوکسی تراپی</span> و <span>پلاسماپن</span></h1>
             </div>
             <p class="lighterText">تولیدکننده دستگاه های کربوکسی تراپی و پلاسماپن و تجهیزات با کیفیت در ایران</p>
             <a class="generalButton outlineButton" href="#">بیشتر بخوانید</a>
@@ -205,7 +205,7 @@ get_header();
             <?php echo do_shortcode('[contact-form-7 id="8ac65fa" title="دمو رایگان صفحه اصلی"]') ?>
         </div>
         <div class="sectionLeft">
-            <img src="<?php echo get_template_directory_uri() ?>/img/new-transparent-for-request-min.png" alt="کارن-طب">
+            <img src="<?php echo get_template_directory_uri() ?>/img/new-transparent-for-request-min-1.png" alt="کارن-طب">
         </div>
     </div>
 </div>
@@ -217,19 +217,19 @@ get_header();
         </div>
         <div class="blogPostHome">
             <div class="sectionOne">
-                <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/x-c-0072.jpg" alt=""></a>
+                <a href=""><img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/x-c-0072.jpg" alt=""></a>
             </div>
             <div class="sectionTwo">
                 <div class="sectionThreeFourP">
                     <div class="sectionThree">
-                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0379.jpg" alt=""></a>
+                        <a href=""><img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0379.jpg" alt=""></a>
                     </div>
                     <div class="sectionFour">
-                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/xgunhero.jpg" alt=""></a>
+                        <a href=""><img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/xgunhero.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="">
-                    <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0324.jpg" alt=""></a>
+                <div class="sectionFive">
+                    <a href=""><img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0324.jpg" alt=""></a>
                 </div>
             </div>
         </div>

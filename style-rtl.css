@@ -91,9 +91,19 @@ h1 {
 h2 {
   font-size: 23px;
 }
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+}
 
 h3 {
   font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 16px;
+  }
 }
 
 h4 {
@@ -168,6 +178,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   color: #828282;
 }
+@media screen and (max-width: 480px) {
+  .generalHeading span {
+    font-size: 13px;
+  }
+}
 
 .bigHeading h1, .bigHeading h2, .bigHeading h3, .bigHeading h4, .bigHeading h5, .bigHeading h6 {
   font-size: 35px;
@@ -214,7 +229,7 @@ p {
 }
 
 .lowRadius {
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .highRadius {
@@ -617,12 +632,38 @@ select option {
 .mainHeaderBack {
   background-color: #f4f7fe;
 }
+@media screen and (max-width: 768px) {
+  .mainHeaderBack {
+    background-color: #fff;
+  }
+}
 .mainHeaderBack .mainHeader {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader {
+    flex-flow: row-reverse;
+  }
+}
 .mainHeaderBack .mainHeader .logoSection {
   margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .logoSection {
+    margin-left: 0px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .logoSection svg {
+    height: 55px;
+    width: 75px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .menuSection {
+    display: none;
+  }
 }
 .mainHeaderBack .mainHeader .menuSection ul {
   margin: 0;
@@ -641,12 +682,30 @@ select option {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .headerIcon {
+    margin: 0px 0px 0px auto;
+  }
+}
+.mainHeaderBack .mainHeader .headerIcon .mobileMenuSection {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .headerIcon .mobileMenuSection {
+    display: flex !important;
+  }
+}
 .mainHeaderBack .mainHeader .headerIcon .searchIcon {
   width: 45px;
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .headerIcon .searchIcon {
+    display: none;
+  }
 }
 .mainHeaderBack .mainHeader a {
   display: flex;
@@ -655,9 +714,48 @@ select option {
 .mainHeaderBack .mainHeader a span {
   margin-left: 5px;
 }
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .callNumberHeader {
+    display: none;
+  }
+}
+
+.stickyHeaderParent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -100px;
+  transition: all 0.5s;
+  z-index: 999;
+}
+.stickyHeaderParent .mainHeaderBack {
+  background-color: #fff;
+  margin: 0;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
+}
+.stickyHeaderParent .mainHeaderBack .mainHeader .logoSection svg {
+  height: 70px;
+  width: 90px;
+}
+@media screen and (max-width: 480px) {
+  .stickyHeaderParent .mainHeaderBack .mainHeader .logoSection svg {
+    height: 50px;
+    width: 70px;
+  }
+}
+
+.showStickyHeader {
+  top: 0;
+}
 
 .introSectionBack {
   background-color: #f4f7fe;
+}
+@media screen and (max-width: 480px) {
+  .introSectionBack {
+    padding-bottom: 50px;
+  }
 }
 .introSectionBack .introSection {
   display: flex;
@@ -668,8 +766,50 @@ select option {
 .introSectionBack .introSection .introSectionDesc {
   width: 40%;
 }
+@media screen and (max-width: 480px) {
+  .introSectionBack .introSection .introSectionDesc {
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .introSectionBack .introSection .introSectionDesc h1 {
+    font-size: 25px;
+  }
+}
+.introSectionBack .introSection .introSectionDesc h1 span {
+  font-size: 36px;
+  color: #4698c8;
+  font-weight: 800;
+  display: inline-block;
+}
+@media screen and (max-width: 480px) {
+  .introSectionBack .introSection .introSectionDesc h1 span {
+    font-size: 25px;
+  }
+}
+.introSectionBack .introSection .introSectionDesc p {
+  font-size: 17px;
+}
+@media screen and (max-width: 480px) {
+  .introSectionBack .introSection .introSectionDesc p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .introSectionBack .introSection .introSectionDesc a {
+    display: inline-block;
+  }
+}
 .introSectionBack .introSection .introSectionImg {
   width: 45%;
+}
+@media screen and (max-width: 480px) {
+  .introSectionBack .introSection .introSectionImg {
+    width: 100%;
+    order: 1;
+  }
 }
 
 .mainFooterBack {
@@ -760,6 +900,10 @@ select option {
 }
 .mainFooterBack .mainFooter li {
   list-style-type: none;
+  padding-right: 0px !important;
+}
+.mainFooterBack .mainFooter li::before {
+  content: none;
 }
 
 .footerCopyrightBack {
@@ -769,7 +913,7 @@ select option {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 60%;
+  width: 85%;
 }
 @media screen and (max-width: 480px) {
   .footerCopyrightBack .footerCopyright {
@@ -785,6 +929,8 @@ select option {
 @media screen and (max-width: 480px) {
   .footerCopyrightBack .footerCopyright p {
     order: 2;
+    font-size: 13px;
+    text-align: center;
   }
 }
 .footerCopyrightBack .footerCopyright .footerCopyrightIcons {
@@ -809,6 +955,11 @@ select option {
   background-color: #4696c7;
   position: relative;
   padding: 10px;
+}
+@media screen and (max-width: 480px) {
+  .counterNumbers {
+    padding: 0;
+  }
 }
 .counterNumbers img {
   position: absolute;
@@ -837,6 +988,11 @@ select option {
   margin-top: 7px;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .counterNumbers .counterNumbersInner .counterItem .counterTitle {
+    font-size: 15px !important;
+  }
+}
 .counterNumbers .counterNumbersInner .counterItem .counterNumber {
   text-align: center;
 }
@@ -844,6 +1000,11 @@ select option {
   font-size: 35px;
   font-weight: 700;
   line-height: 40px;
+}
+@media screen and (max-width: 480px) {
+  .counterNumbers .counterNumbersInner .counterItem .counterNumber span {
+    font-size: 26px !important;
+  }
 }
 
 .descProductSectionHomeBack {
@@ -859,11 +1020,32 @@ select option {
 .descProductSectionHomeBack .descProductSectionHome .descProductText {
   width: 35%;
 }
+@media screen and (max-width: 480px) {
+  .descProductSectionHomeBack .descProductSectionHome .descProductText {
+    width: 80%;
+    text-align: center;
+  }
+}
 .descProductSectionHomeBack .descProductSectionHome .descProductText p {
   text-align: justify;
 }
+@media screen and (max-width: 480px) {
+  .descProductSectionHomeBack .descProductSectionHome .descProductText p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .descProductSectionHomeBack .descProductSectionHome .descProductText a {
+    display: inline-block;
+  }
+}
 .descProductSectionHomeBack .descProductSectionHome .descProductImg {
   width: 35%;
+}
+@media screen and (max-width: 480px) {
+  .descProductSectionHomeBack .descProductSectionHome .descProductImg {
+    width: 80%;
+  }
 }
 .descProductSectionHomeBack .differentSection .descProductText {
   order: 2;
@@ -880,10 +1062,20 @@ select option {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 480px) {
+  .serviceSectionHomeBack .serviceSectionHome .serviceBoxParent {
+    margin: 60px 0px 0px 0px !important;
+  }
+}
 .serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs {
   width: 18%;
   text-align: center;
   padding: 10px 20px;
+}
+@media screen and (max-width: 480px) {
+  .serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs {
+    width: 48%;
+  }
 }
 .serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs .iconPart {
   width: 80px;
@@ -895,9 +1087,25 @@ select option {
   border-radius: 100%;
   background-color: #fff;
 }
+@media screen and (max-width: 480px) {
+  .serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs .iconPart {
+    width: 50px;
+    height: 50px;
+  }
+}
+.serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs .iconPart svg {
+  height: 30px;
+  width: 30px;
+}
 .serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs span {
   color: #565656;
   font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .serviceSectionHomeBack .serviceSectionHome .serviceBoxParent .serviceBoxs span {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 
 .aboutUsSectionHomeBack {
@@ -913,6 +1121,12 @@ select option {
   width: 35%;
   flex-direction: column;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex .aboutUsSections {
+    width: 100%;
+    font-size: 13px;
+  }
 }
 .aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex .aboutUsSections .aboutUsP {
   display: flex;
@@ -941,6 +1155,80 @@ select option {
 .freeDemoSectionHomeBack .freeDemoSectionHome .sectionRight {
   width: 40%;
 }
+@media screen and (max-width: 480px) {
+  .freeDemoSectionHomeBack .freeDemoSectionHome .sectionRight {
+    width: 100%;
+  }
+}
+.freeDemoSectionHomeBack .freeDemoSectionHome .sectionRight p {
+  text-align: justify;
+}
 .freeDemoSectionHomeBack .freeDemoSectionHome .sectionLeft {
+  width: 48%;
+}
+@media screen and (max-width: 480px) {
+  .freeDemoSectionHomeBack .freeDemoSectionHome .sectionLeft {
+    width: 100%;
+  }
+}
+
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome {
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome a {
+  display: block;
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne {
+  width: 48%;
+  height: 710px;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne a {
+  overflow: hidden;
+  height: 100%;
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  height: 710px;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo {
+    height: 350px;
+    width: 100%;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP {
+    margin-bottom: 0px;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionThree, .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionFour {
   width: 48%;
 }/*# sourceMappingURL=style-rtl.css.map */
