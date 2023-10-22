@@ -1,0 +1,3 @@
+var $ = jQuery;
+
+$(window).on

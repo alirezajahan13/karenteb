@@ -20,12 +20,12 @@
 				</div>
 				<div class="footerColumn2 footerColumns">
 					<h3>لینک ها</h3>
-					<li><a href="https://karenmed.ir/">صفحه اصلی</a></li>
-					<li><a href="https://karenmed.ir/product/%d8%af%d8%b3%d8%aa%da%af%d8%a7%d9%87-%da%a9%d8%b1%d8%a8%d9%88%da%a9%d8%b3%db%8c-%d8%aa%d8%b1%d8%a7%d9%be%db%8c-%da%a9%d8%a7%d8%b1%d9%86-%d8%b7%d8%a8/">دستگاه کربوکسی</a></li>
-					<li><a href="https://karenmed.ir/product/plasma-pen/">دستگاه پلاسما</a></li>
-					<li><a href="https://karenmed.ir/product/%d9%81%db%8c%d8%b3-%d9%be%d8%af-%da%a9%d8%a7%d8%b1%d9%86-%d8%b7%d8%a8/">فیس پد</a></li>
-					<li><a href="https://karenmed.ir/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره ما</a></li>
-					<li><a href="https://karenmed.ir/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7%d9%85%d8%a7/">تماس با ما</a></li>
+					<li><a href="">صفحه اصلی</a></li>
+					<li><a href="">دستگاه کربوکسی</a></li>
+					<li><a href="">دستگاه پلاسما</a></li>
+					<li><a href="">فیس پد</a></li>
+					<li><a href="">درباره ما</a></li>
+					<li><a href="">تماس با ما</a></li>
 				</div>
 				<div class="footerColumn3 footerColumns">
 					<h3 >ارتباط با ما</h3>

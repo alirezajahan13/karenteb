@@ -91,9 +91,19 @@ h1 {
 h2 {
   font-size: 23px;
 }
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+}
 
 h3 {
   font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 16px;
+  }
 }
 
 h4 {
@@ -168,6 +178,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   color: #828282;
 }
+@media screen and (max-width: 480px) {
+  .generalHeading span {
+    font-size: 13px;
+  }
+}
 
 .bigHeading h1, .bigHeading h2, .bigHeading h3, .bigHeading h4, .bigHeading h5, .bigHeading h6 {
   font-size: 35px;
@@ -214,7 +229,7 @@ p {
 }
 
 .lowRadius {
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .highRadius {

@@ -4,13 +4,31 @@
 
 .mainHeaderBack{
     background-color: $backColorLight3;
+    @include sm{
+        background-color: #fff;
+    }
     .mainHeader{
         display: flex;
         align-items: center;
+        @include sm{
+            flex-flow: row-reverse;
+        }
         .logoSection{
             margin-left: 30px;
+            @include sm{
+                margin-left: 0px !important;
+            }
+            svg{
+                @include sm{
+                    height: 55px;
+                    width: 75px;
+                }
+            }
         }
         .menuSection{
+            @include sm{
+                display: none;
+            }
             ul{
                 margin: 0;
                 padding: 0;
@@ -30,12 +48,24 @@
             margin-right: auto;
             display: flex;
             align-items: center;
+            @include sm{
+                margin: 0px 0px 0px auto;
+            }
+            .mobileMenuSection{
+                display: none;
+                @include sm{
+                    display: flex !important;
+                }
+            }
             .searchIcon{
                 width: 45px;
                 height: 45px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @include sm{
+                    display: none;
+                }
             }
         }
         a{
@@ -45,10 +75,47 @@
                 margin-left: 5px;
             }
         }
+        .callNumberHeader{
+            @include sm{
+                display: none;
+            }
+        }
     }
+}
+.stickyHeaderParent{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -100px;
+    transition: all 0.5s;
+    z-index: 999;
+    .mainHeaderBack{
+        background-color: #fff;
+        margin: 0;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,.07);
+        .mainHeader{
+            .logoSection{
+                svg{
+                    height: 70px;
+                    width: 90px;
+                    @include xs{
+                        height: 50px;
+                        width: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+.showStickyHeader{
+    top: 0;
 }
 .introSectionBack{
     background-color: $backColorLight3;
+    @include xs{
+        padding-bottom: 50px;
+    }
     .introSection{
         display: flex;
         flex-wrap: wrap;
@@ -56,9 +123,43 @@
         align-items: center;
         .introSectionDesc{
             width: 40%;
+            @include xs{
+                width: 100%;
+                order: 2;
+                text-align: center;
+            }
+            h1{
+                @include xs{
+                    font-size: 25px;
+                }
+                span{
+                    font-size: 36px;
+                    color: $textColorLight2;
+                    font-weight: 800;
+                    display: inline-block;
+                    @include xs{
+                        font-size: 25px;
+                    }
+                }
+            }
+            p{
+                font-size: 17px;
+                @include xs{
+                    font-size: 14px;
+                }
+            }
+            a{
+                @include xs{
+                    display: inline-block;
+                }
+            }
         }
         .introSectionImg{
             width: 45%;
+            @include xs{
+                width: 100%;
+                order: 1;
+            }
         }
     }
 }
@@ -139,6 +240,10 @@
         }
         li{
             list-style-type: none;
+            padding-right: 0px !important;
+            &::before{
+            content: none;
+        }
         }
     }
 }
@@ -148,7 +253,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 60%;
+        width: 85%;
         @include xs{
             justify-content: center;
             width: auto;
@@ -159,6 +264,8 @@
             font-weight: 300;
             @include xs{
                 order: 2;
+                font-size: 13px;
+                text-align: center;
             }
         }
         .footerCopyrightIcons{
@@ -182,6 +289,9 @@
     background-color: $backColorDark;
     position: relative;
     padding: 10px;
+    @include xs{
+        padding: 0;
+    }
     img{
         position: absolute;
         left: 0;
@@ -205,6 +315,9 @@
                 font-size: 18px;
                 margin-top: 7px;
                 text-align: center;
+                @include xs{
+                    font-size: 15px !important;
+                }
             }
             .counterNumber{
                 text-align: center;
@@ -212,6 +325,9 @@
                     font-size: 35px;
                     font-weight: 700;
                     line-height: 40px;
+                    @include xs{
+                        font-size: 26px !important;
+                    }
                 }
             }
         }
@@ -227,12 +343,27 @@
         align-items: center;
         .descProductText{
             width: 35%;
+            @include xs{
+                width: 80%;
+                text-align: center;
+            }
             p{
                 text-align: justify;
+                @include xs{
+                    font-size: 14px;
+                }
+            }
+            a{
+                @include xs{
+                    display: inline-block;
+                }
             }
         }
         .descProductImg{
             width: 35%;
+            @include xs{
+                width: 80%;
+            }
         }
     }
     .differentSection{
@@ -251,10 +382,16 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            @include xs{
+                margin: 60px 0px 0px 0px !important;
+            }
             .serviceBoxs{
                 width: 18%;
                 text-align: center;
                 padding: 10px 20px;
+                @include xs{
+                    width: 48%;
+                }
                 .iconPart{
                     width: 80px;
                     height: 80px;
@@ -264,10 +401,22 @@
                     margin: auto;
                     border-radius: 100%;
                     background-color: #fff;
+                    @include xs{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    svg{
+                        height: 30px;
+                        width: 30px;
+                    }
                 }
                 span{
                     color: $textColorLowSat;
                     font-size: 14px;
+                    @include xs{
+                        font-size: 13px;
+                        line-height: 15px;
+                    }
                 }
             }
         }
@@ -285,6 +434,10 @@
                 width: 35%;
                 flex-direction: column;
                 display: flex;
+                @include xs{
+                    width: 100%;
+                    font-size: 13px;
+                }
                 .aboutUsP{
                     display: flex;
                     align-items: center;
@@ -315,9 +468,18 @@
         justify-content: space-between;
         .sectionRight{
             width: 40%;
+            @include xs{
+                width: 100%;
+            }
+            p{
+                text-align: justify;
+            }
         }
         .sectionLeft{
             width: 48%;
+            @include xs{
+                width: 100%;
+            }
         }
     }
 }
@@ -360,6 +522,56 @@
         //         height: 300px;
         //     }
         // }
-        
+        .blogPostHome{
+            display: flex;
+            justify-content: space-around;
+            @include xs{
+                flex-direction: column;
+                margin: auto;
+                width: 80%;
+            }
+            a{
+                display: block;
+            }
+            .sectionOne{
+                width: 48%;
+                height: 710px;
+                @include xs{
+                    width: 100%;
+                    height: 350px;
+                    margin-bottom: 10px;
+                }
+                a{
+                    overflow: hidden;
+                    height: 100%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .sectionTwo{
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+                height: 710px;
+                @include xs{
+                    height: 350px;
+                    width: 100%;
+                }
+                .sectionThreeFourP{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 12px;
+                    @include xs{
+                        margin-bottom: 0px;
+                    }
+                    .sectionThree , .sectionFour{
+                        width: 48%;
+                    }
+                }
+            }
+        }
     }
 }
