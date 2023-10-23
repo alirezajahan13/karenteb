@@ -5,6 +5,9 @@
 .mainHeaderBack{
     background-color: $backColorLight3;
     @include sm{
+        display: none;
+    }
+    @include sm{
         background-color: #fff;
     }
     .mainHeader{
@@ -90,6 +93,9 @@
     top: -100px;
     transition: all 0.5s;
     z-index: 999;
+    @include sm{
+        display: none;
+    }
     .mainHeaderBack{
         background-color: #fff;
         margin: 0;
@@ -574,4 +580,61 @@
             }
         }
     }
+}
+.mobileMenuParent{
+    padding: 5px 10px 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.6);
+    display: none;
+    @include sm{
+        display: block !important;
+    }
+    .moileMenuHeader{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        .mobileMenuClickParent{
+            #closeMenuMob{
+                display: none;
+            }
+        }
+    }
+    .mainMenu{
+        display: none;
+        ul{
+            padding: 0;
+            li{
+                padding-right: 10px;
+                margin: 18px 0;
+                font-weight: 500;
+                &::before{
+                    content: none;
+                }
+                a{
+                    width: 100%;
+                    padding: 10px 0px;
+                }
+            }
+            .current-menu-item{
+                a{
+                    color: $mainColorDark !important;
+                }
+            }
+        }
+    }
+}
+.mainSiteOverlay{
+    opacity: 0;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
