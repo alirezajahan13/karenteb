@@ -48,6 +48,40 @@ get_header();
             <h2>جدیدترین محصولات کارن طب</h2>
             <span>تولید محصولات با کیفیت مطابق با آخرین استانداردهای روز دنیا</span>
         </div>
+        <div class="productSwiperParent">
+            <div class="swiper productsSwiper swiper-container  ">
+                <div class="swiper-wrapper innerSwiper">
+                    <!-- <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div>
+                    <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div>
+                    <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div>
+                    <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div>
+                    <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div> -->
+                    <?php 
+                    $args = array(
+                        'post_type'      => 'product',
+                        'posts_per_page' => 4,
+                    );
+
+                    $loop = new WP_Query($args);
+
+                    if ($loop->have_posts()) {
+                        while ($loop->have_posts()) : $loop->the_post(); ?>
+                            <div class="swiper-slide">
+                                <?php wc_get_template_part('content', 'product'); ?>
+                            </div>
+                        <?php endwhile;
+                    } else {
+                        echo '<div class="swiper-slide">' . __( 'No products found' ) . '</div>';
+                    }
+
+                    wp_reset_postdata();
+                    ?>
+                </div>
+                <!-- Add Pagination -->
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
     </div>
 </div>
