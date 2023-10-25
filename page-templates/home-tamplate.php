@@ -79,8 +79,12 @@ get_header();
                 </div>
                 <!-- Add Pagination -->
                 <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next">
+                    <svg height="30" stroke="#fff" stroke-width="2" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 50" xml:space="preserve"><path fill="#fff" d="M15.563 40.836a.997.997 0 0 0 1.414 0l15-15a.999.999 0 0 0 0-1.414l-15-15a.999.999 0 1 0-1.414 1.414l14.293 14.293-14.293 14.293a.999.999 0 0 0 0 1.414z"/></svg>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg height="30" stroke="#fff" stroke-width="2" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 50" xml:space="preserve" transform="rotate(180)"><path fill="#fff" d="M15.563 40.836a.997.997 0 0 0 1.414 0l15-15a.999.999 0 0 0 0-1.414l-15-15a.999.999 0 1 0-1.414 1.414l14.293 14.293-14.293 14.293a.999.999 0 0 0 0 1.414z"/></svg>
+                </div>
             </div>
         </div>
     </div>
@@ -251,19 +255,31 @@ get_header();
         </div>
         <div class="blogPostHome">
             <div class="sectionOne">
-                <a href=""><img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/x-c-0072.jpg" alt=""></a>
+                <a href="">
+                    <img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/x-c-0072.jpg" alt="">
+                    <h3>مجله کارن طب</h3>
+                </a>
             </div>
             <div class="sectionTwo">
                 <div class="sectionThreeFourP">
                     <div class="sectionThree">
-                        <a href=""><img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0379.jpg" alt=""></a>
+                        <a href="">
+                            <img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0379.jpg" alt="">
+                            <h3>مجله کارن طب</h3>
+                        </a>
                     </div>
                     <div class="sectionFour">
-                        <a href=""><img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/xgunhero.jpg" alt=""></a>
+                        <a href="">
+                            <img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/xgunhero.jpg" alt="">
+                            <h3>مجله کارن طب</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="sectionFive">
-                    <a href=""><img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0324.jpg" alt=""></a>
+                    <a href="">
+                        <img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0324.jpg" alt="">
+                        <h3>مجله کارن طب</h3>
+                    </a>
                 </div>
             </div>
         </div>

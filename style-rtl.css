@@ -680,7 +680,43 @@ select option {
   content: none;
 }
 .mainHeaderBack .mainHeader .menuSection ul li a {
-  padding: 10px;
+  padding: 5px 10px;
+}
+.mainHeaderBack .mainHeader .menuSection ul .current-menu-item a {
+  color: #187dba !important;
+  border-bottom: 1px solid #187dba;
+}
+.mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul {
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+  align-items: start;
+  border-radius: 10px;
+}
+.mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li {
+  margin: 2px 0;
+  padding-right: 3px;
+  border-bottom: 1px solid #187dba;
+  width: 100%;
+}
+.mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li:last-child {
+  border-bottom: none;
+}
+.mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li a {
+  padding: 7px;
+}
+.mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children a svg {
+  margin-right: 5px;
 }
 .mainHeaderBack .mainHeader .headerIcon {
   margin-right: auto;
@@ -848,6 +884,11 @@ select option {
 .mainFooterBack .mainFooter .footerColumn1 svg {
   height: 70px;
   margin: 15px 0;
+}
+@media screen and (max-width: 480px) {
+  .mainFooterBack .mainFooter .footerColumn1 svg {
+    height: 50px;
+  }
 }
 .mainFooterBack .mainFooter .footerColumn1 p {
   text-align: justify;
@@ -1024,11 +1065,16 @@ select option {
 .descProductSectionHomeBack .descProductSectionHome {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .descProductSectionHomeBack .descProductSectionHome {
+    justify-content: space-evenly;
+  }
+}
 .descProductSectionHomeBack .descProductSectionHome .descProductText {
-  width: 35%;
+  width: 38%;
 }
 @media screen and (max-width: 480px) {
   .descProductSectionHomeBack .descProductSectionHome .descProductText {
@@ -1050,7 +1096,7 @@ select option {
   }
 }
 .descProductSectionHomeBack .descProductSectionHome .descProductImg {
-  width: 35%;
+  width: 40%;
 }
 @media screen and (max-width: 480px) {
   .descProductSectionHomeBack .descProductSectionHome .descProductImg {
@@ -1195,6 +1241,25 @@ select option {
 }
 .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome a {
   display: block;
+  position: relative;
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome a h3 {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(24, 125, 186, 0.58);
+  padding: 20px;
+  margin: 0;
+  border-radius: 0px 0px 7px 7px;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome a h3 {
+    padding: 10px !important;
+  }
 }
 .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne {
   width: 48%;
@@ -1210,6 +1275,7 @@ select option {
 .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne a {
   overflow: hidden;
   height: 100%;
+  position: relative;
 }
 .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne a img {
   height: 100%;
@@ -1241,6 +1307,20 @@ select option {
 }
 .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionThree, .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionFour {
   width: 48%;
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionThree h3, .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionFour h3 {
+  bottom: 10px !important;
+  padding: 10px;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionThree h3, .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionFour h3 {
+    padding: 4px !important;
+    font-size: 14px !important;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionFive h3 {
+  bottom: 10px !important;
 }
 
 .mobileMenuParent {
@@ -1290,6 +1370,11 @@ select option {
 .mobileMenuParent .mainMenu ul .current-menu-item a {
   color: #187dba !important;
 }
+.mobileMenuParent .mainMenu ul .menu-item-has-children .sub-menu {
+  display: none;
+  padding: 0px 5px;
+  font-size: 14px;
+}
 
 .mainSiteOverlay {
   opacity: 0;
@@ -1306,11 +1391,45 @@ select option {
   position: relative;
 }
 .productSwiperParent .productsSwiper {
-  padding: 30px 120px !important;
+  overflow: hidden;
   position: unset;
+  max-width: 900px;
+  padding: 25px 0px;
 }
 .productSwiperParent .productsSwiper .swiper-slide li::before {
   content: none;
+}
+.productSwiperParent .productsSwiper .swiper-slide li .woocommerce-LoopProduct-link {
+  flex-direction: column;
+  display: flex;
+  padding: 10px;
+}
+.productSwiperParent .productsSwiper .swiper-slide li .woocommerce-LoopProduct-link h2 {
+  font-size: 16px;
+  margin-top: 40px;
+}
+.productSwiperParent .productsSwiper .swiper-slide li .woocommerce-LoopProduct-link .price {
+  margin-bottom: 8px;
+}
+.productSwiperParent .productsSwiper .swiper-slide li .woocommerce-LoopProduct-link .price .woocommerce-Price-amount bdi .woocommerce-Price-currencySymbol {
+  margin: 0 5px;
+}
+.productSwiperParent .productsSwiper .swiper-slide li .add_to_cart_button {
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #7fd1ae;
+  padding: 5px;
+  border-radius: 10px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  display: flex;
+}
+.productSwiperParent .productsSwiper .swiper-slide li .add_to_cart_button:hover {
+  background-color: #59c496;
+}
+.productSwiperParent .productsSwiper .swiper-slide li .add_to_cart_button svg {
+  padding: 2px;
 }
 
 .productsSectionHomeBack {
@@ -1338,4 +1457,19 @@ select option {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  opacity: unset !important;
+  background-color: #187dba;
+  border-radius: 100%;
+  width: 35px !important;
+  height: 35px !important;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  display: none !important;
+}
+
+.swiper-button-prev svg {
+  transform: rotate(0deg) !important;
 }/*# sourceMappingURL=style-rtl.css.map */
