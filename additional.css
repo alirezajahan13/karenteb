@@ -244,6 +244,10 @@ p {
   border: 1px solid #f0f5fc;
 }
 
+.bgLight {
+  background-color: #f4f7fe;
+}
+
 button {
   font-family: danaweb !important;
   cursor: pointer;

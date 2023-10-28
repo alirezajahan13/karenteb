@@ -15,19 +15,34 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
+	<main id="primary" class="site-main mainView">
+		<div class="generalHeading highMargined centeredText bottomBorder">
+            <h1>بلاگ کارن طب</h1>
+            <span>بروز ترین مقالات در مجله کارن طب</span>
+        </div>
+		<div class="categoryItemParent highMargined">
+			<?php
+			$categories = get_terms( array(
+				'taxonomy' => 'category',
+				'hide_empty' => true,
+				'exclude'=>array('1')
+			) );
+			foreach($categories as $category) {
+			echo '<a class="categoryItems lowRadius" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+			}
+			?>
+		</div>
 		<?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) :
 				?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1 class="page-title screen-reader-text">بلاگ کارن طب</h1>
 				</header>
 				<?php
 			endif;
-
+			echo '<div class="archiveParent">';
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -37,11 +52,11 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				get_template_part( 'template-parts/content', 'archive' );
 
 			endwhile;
 
-			the_posts_navigation();
+			// the_posts_navigation();
 
 		else :
 
@@ -53,5 +68,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
