@@ -16,8 +16,8 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main mainView">
-		<div class="generalHeading highMargined centeredText bottomBorder">
-            <h1>بلاگ کارن طب</h1>
+		<div class="headingBlogPage generalHeading highMargined centeredText bottomBorder">
+            <h1>بلاگ <div class="changeColorHeader">کارن طب</div></h1>
             <span>بروز ترین مقالات در مجله کارن طب</span>
         </div>
 		<div class="categoryItemParent highMargined">

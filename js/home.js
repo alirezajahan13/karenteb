@@ -27,5 +27,9 @@ $(document).ready(function(){
                 functionIsRan = true;
             }
         });    
+    };
+    if($(window).width() <768){
+        let mobHeaderHeight = $('.mobileMenuParent').outerHeight(true) + 0;
+        $('body').css('padding-top',mobHeaderHeight);
     }
 });
