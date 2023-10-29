@@ -9,9 +9,10 @@
 
 ?>
 
+<div class="generalSinglePostStyle">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
+	<header class="entry-header centeredText">
+	<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
@@ -20,18 +21,21 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				karenteb_posted_on();
-				karenteb_posted_by();
-				?>
-			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php karenteb_post_thumbnail(); ?>
-
-	<div class="entry-content">
+	<div class="archivePostFooter mediumPadding">
+		<span class="centerFooter">تاریخ انتشار : </span>
+		<span><?php echo get_the_date() ?></span>
+		<span class="centerFooter">نویسنده :</span>
+		<span><?php echo get_the_author() ?></span>
+	</div>
+	<div class="imageSinglePostBack">
+		<div class="highSingleBox">
+			<?php karenteb_post_thumbnail(); ?>
+		</div>
+	</div>
+	div.<?php the_excerpt(); ?>
+	<div class="entry-content singleBox">
 		<?php
 		the_content(
 			sprintf(
@@ -58,8 +62,9 @@
 		// );
 		?>
 	</div><!-- .entry-content -->
-
+	
 	<!-- <footer class="entry-footer">
 		<?php //karenteb_entry_footer(); ?>
 	</footer>.entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+</div>
