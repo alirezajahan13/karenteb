@@ -215,3 +215,51 @@ function new_excerpt_more( $more ) {
 	return ' ... ';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+add_action( 'wp', 'mageplaza_remove_sidebar_product_pages' );
+function mageplaza_remove_sidebar_product_pages() {
+  if ( is_product() ) {
+  remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+  }
+}
+
+/**
+ * Remove WooCommerce breadcrumbs 
+ */
+add_action( 'init', 'my_remove_breadcrumbs' );
+ 
+function my_remove_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
+
+/**
+ * @desc Remove in all product type
+ */
+function wc_remove_all_quantity_fields( $return, $product ) {
+    return true;
+}
+add_filter( 'woocommerce_is_sold_individually', 'wc_remove_all_quantity_fields', 10, 2 );
+
+/**
+ * Remove related products output
+ */
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+
+
+
+
+
+
+function customText(){
+	global $product;
+	$product_info_metabox = get_field( "product_info_metabox");
+	echo '<div class="productInfoTabelContainer">';
+	foreach ($product_info_metabox as $pmeta){
+	echo '<div class="productInfoTabel">';
+	echo '<span class="firstLevelOfProductInfo">'.$pmeta['tabel_items'].'</span><span class="secondLevelOfProductInfo">'.$pmeta['item_valu'].'</span>';
+	echo '</div>';
+	}
+	echo '</div>';
+  }
+  add_action( 'woocommerce_single_product_summary','customText',25);
