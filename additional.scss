@@ -14,6 +14,9 @@
             align-items: center;
             .woocommerce-product-gallery{
                 width: 40%;
+                @include sm{
+                    width: 100%;
+                }
                 img{
                     border-radius: 7px !important;
                 }
@@ -37,9 +40,18 @@
             }
             .entry-summary{
                 width: 55%;
+                @include sm{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
                 .productInfoTabelContainer{
                     width: 50%;
                     margin-bottom: 20px;
+                    @include sm{
+                        width: 100%;
+                    }
 
                     .productInfoTabel{
                         display: flex;
@@ -137,6 +149,9 @@
                     font-size: 14px !important;
                     font-weight: 600 !important;
                     transition: all 0.3s;
+                    @include xs{
+                        width: 100%;
+                    }
                     &:hover{
                         background-color: darken($offColor, 15%) !important;
                     }
@@ -150,6 +165,13 @@
             ul.tabs{
                 border: none !important;
                 text-align: center !important;
+                @include sm{
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    display: flex !important;
+                    flex-wrap: wrap !important;
+                    justify-content: space-between !important;
+                }
                 &::before{
                     display: none !important;
                 }
@@ -158,6 +180,9 @@
                     background-color: transparent !important;
                     margin: 0 20px !important;
                     position: relative;
+                    @include sm{
+                        margin: 0 !important;
+                    }
                     &::after{
                         position: absolute;
                         content: '';
@@ -180,6 +205,9 @@
                         color: $textColorLight !important;
                         font-size: 16px !important;
                         font-weight: 600 !important;
+                        @include sm{
+                            font-size: 12px !important;
+                        }
                     }
                 }
                 li.active{
@@ -188,6 +216,131 @@
                     }
                     a{
                         color: $textColorLight2 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.woocommerce-Reviews{
+    .woocommerce-Reviews-title{
+        font-size: 20px;
+    }
+    #comments{
+        max-width: 900px;
+        margin: auto;
+        .commentlist{
+            padding: 0 !important;
+            li{
+                border: 1px solid $mainColorLight2 !important;
+                padding: 10px !important;
+                border-radius: 10px !important;
+                &::before{
+                    display: none !important;
+                }
+                .comment_container{
+                    img{
+                        display: none !important;
+                    }
+                    .comment-text{
+                        border: none !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        display: flex !important;
+                        flex-wrap: wrap !important;
+                        justify-content: flex-start !important;
+                        .star-rating{
+                            order: 2 !important;
+                            display: flex !important;
+                            margin-left: 0 !important;
+                            margin-right: auto !important;
+                        }
+                        .meta{
+                            display: flex !important;
+                            flex-wrap: wrap !important;
+                            justify-content: flex-start !important;
+                            align-items: center !important;
+                            width: 48% !important;
+                            order: 1 !important;
+                        }
+                        .description{
+                            width: 100% !important;
+                            order: 3 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #review_form_wrapper{
+        padding: 20px;
+        border-radius: 10px;
+        .comment-reply-title{
+            display: block;
+            margin: auto;
+            width: max-content;
+            font-size: 20px;
+            font-weight: 700;
+            border-bottom: 1px solid $backColorDark;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: $textColorDark;
+        }
+        .comment-respond{
+            .comment-form{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 900px;
+                margin: auto;
+                .comment-notes{
+                    width: 60%;
+                    @include sm{
+                        width: 100%;
+                    }
+                }
+                .comment-form-rating{
+                    width: 30%;
+                    @include sm{
+                        width: 100%;
+                    }
+                }
+                .comment-form-author , .comment-form-email{
+                    width: 48%;
+                    @include sm{
+                        width: 100%;
+                    }
+                }
+                .comment-form-comment{
+                    width: 100%;
+                    textarea{
+                        margin: 0 !important;
+                        height: 300px !important;
+                    }
+                }
+                .form-submit{
+                    width: 100%;
+                    input{
+                        background-color: $mainColor !important;
+                        border-radius: 30px !important;
+                        padding: 20px 30px !important;
+                        font-size: 14px !important;
+                        font-weight: 600 !important;
+                        transition: all 0.3s;
+                        color: #fff !important;
+                        width: 100% !important;
+                        &:hover{
+                            background-color: darken($mainColor, 10%);
+                        }
+                    }
+                }
+                .comment-form-cookies-consent{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    #wp-comment-cookies-consent{
+                        margin-left: 10px;
                     }
                 }
             }
