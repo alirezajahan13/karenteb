@@ -1532,7 +1532,7 @@ select option {
   padding: 0 15px;
 }
 .archiveParent .archiveCards .archiveCardExc p {
-  font-size: 14px;
+  font-size: 13px;
 }
 .archiveParent .archiveCards .archivePostFooter {
   display: flex;
@@ -1603,56 +1603,73 @@ select option {
 .generalSinglePostStyle .post-thumbnail {
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 25px;
 }
 .generalSinglePostStyle .post-thumbnail img {
   display: block;
   width: 100%;
   height: auto;
 }
+.generalSinglePostStyle .excerptSinglePostBack {
+  padding: 30px 0;
+}
+.generalSinglePostStyle .excerptSinglePostBack .excerptSinglePost p {
+  margin-bottom: 0;
+  text-align: justify;
+}
+.generalSinglePostStyle .archivePostFooter {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: #828282;
+}
+.generalSinglePostStyle .archivePostFooter .dateSinglePost {
+  margin-left: 80px;
+}
 
-.commentSecBack .comments-title {
+.comments-title {
   text-align: center;
 }
-.commentSecBack li {
+
+li {
   margin: 0;
   padding-right: 0;
 }
-.commentSecBack li::before {
+li::before {
   display: none !important;
 }
-.commentSecBack li .comment-body {
+li .comment-body {
   background-color: #f4f7fe;
   padding: 25px;
 }
-.commentSecBack li .comment-body .comment-meta {
+li .comment-body .comment-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.commentSecBack li .comment-body .comment-meta .comment-author {
+li .comment-body .comment-meta .comment-author {
   display: flex;
   align-items: center;
 }
-.commentSecBack li .comment-body .comment-meta .comment-author img {
+li .comment-body .comment-meta .comment-author img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   margin: 0px 0px 5px 20px;
 }
-.commentSecBack li .comment-body .comment-meta .comment-metadata a time {
+li .comment-body .comment-meta .comment-metadata a time {
   font-size: 14px;
+  color: #828282;
 }
-.commentSecBack li .children {
+li .children {
   margin: 0;
   padding: 0;
 }
-.commentSecBack li .children li {
+li .children li {
   margin: 0;
   padding: 0;
 }
-.commentSecBack li .children li .comment-body {
+li .children li .comment-body {
   background-color: #ebf0fd;
   padding: 25px 65px 20px 20px;
 }

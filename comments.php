@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 ?>
 <div class="commentSecBack">
-
+<div class="commentNoneSec">
 <div id="comments" class="comments-area">
 
 	<?php
@@ -59,6 +59,7 @@ if ( post_password_required() ) {
 			);
 			?>
 		</ol><!-- .comment-list -->
+		<?php endif; // Check for have_comments(). ?>
 		<div class="commentBoxParent bgLight">
 			<div class="commentBoxSingle highSingleBox">
 				<div class="commentSection">
@@ -72,8 +73,6 @@ if ( post_password_required() ) {
 					<?php
 				endif;
 
-				endif; // Check for have_comments().
-
 				comment_form();
 				?>
 			</div>
@@ -83,6 +82,6 @@ if ( post_password_required() ) {
 		</div>
 	</div>
 </div><!-- #comments -->
-
+</div>
 
 </div>
