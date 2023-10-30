@@ -207,7 +207,7 @@ add_theme_support( 'wc-product-gallery-lightbox' );
 add_theme_support( 'wc-product-gallery-slider' );
 
 function my_excerpt_length($length){
-	return 25;
+	return 40;
 }
 add_filter('excerpt_length', 'my_excerpt_length');
 

@@ -24,17 +24,25 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 	<div class="archivePostFooter mediumPadding">
-		<span class="centerFooter">تاریخ انتشار : </span>
-		<span><?php echo get_the_date() ?></span>
-		<span class="centerFooter">نویسنده :</span>
-		<span><?php echo get_the_author() ?></span>
+		<div class="dateSinglePost">
+			<span class="centerFooter">تاریخ انتشار : </span>
+			<span><?php echo get_the_date() ?></span>
+		</div>
+		<div class="authorSinglePost">
+			<span class="centerFooter">نویسنده :</span>
+			<span><?php echo get_the_author() ?></span>
+		</div>
 	</div>
 	<div class="imageSinglePostBack">
 		<div class="highSingleBox">
 			<?php karenteb_post_thumbnail(); ?>
 		</div>
 	</div>
-	div.<?php the_excerpt(); ?>
+	<div class="excerptSinglePostBack bgLight">
+		<div class="excerptSinglePost singleBox">
+			<?php the_excerpt(); ?>
+		</div>
+	</div>
 	<div class="entry-content singleBox">
 		<?php
 		the_content(
