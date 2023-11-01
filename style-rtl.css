@@ -1565,7 +1565,7 @@ select option {
   background-color: #ddeef9;
 }
 
-.headingBlogPage .changeColorHeader {
+.headingBlogPage .changeColorHeader, .aboutUsPageBack .changeColorHeader {
   color: #4698c8;
   display: inline-block;
 }
@@ -1734,4 +1734,54 @@ li .children li .comment-body {
 }
 .commentBoxParent .commentBoxSingle .commentSectionImg {
   width: 48%;
+}
+
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0px 30px 0px;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneRight {
+  width: 40%;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft {
+  width: 45%;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent:hover h5 {
+  color: #4698c8;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent:hover .svgIconPart {
+  background-color: #166ea5;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent:hover p {
+  color: #828282;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .svgIconPart {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #197dbb;
+  transition: all 0.4s;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart {
+  width: 80%;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart h5 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  transition: all 0.4s;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart p {
+  margin-bottom: 0px;
 }/*# sourceMappingURL=style-rtl.css.map */

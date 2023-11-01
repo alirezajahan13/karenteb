@@ -29,10 +29,10 @@
 				</div>
 				<div class="footerColumn3 footerColumns">
 					<h3 >ارتباط با ما</h3>
-					<a href="https://maps.app.goo.gl/PdjX44XJRwa2vfsN7" target="_blank"><p>آدرس: تهران، شرق به غرب بزرگراه جلال آل احمد بعد از پل آزمایش، پلاک 177</p></a>
+					<a href="https://maps.app.goo.gl/PdjX44XJRwa2vfsN7" target="_blank"><p>آدرس: جردن، خیابان سلطانی (سایه)، پلاک 67، واحد 5</p></a>
 					<div class="contactFooter">
 						<li><span>تلفن:</span><a href="tel://09129729702"><span>09129729702</span></a></li>
-						<li><span>تلفن:</span><a href="tel://02165579712"><span>65579712-021</span></a></li>
+						<li><span>تلفن:</span><a href="tel://02165579712"><span>26201172-021</span></a></li>
 						<li><span>تلفن:</span><a href="tel://02145302"><span>45302-021</span></a></li>
 						<li><span>ایمیل:</span><a href="mailto:info@karenmed.ir" target="_blank"><span>info@karenmed.ir</span></a></li>
 					</div>
