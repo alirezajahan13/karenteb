@@ -883,7 +883,7 @@
         }
     }
 }
-.headingBlogPage{
+.headingBlogPage , .aboutUsPageBack{
     .changeColorHeader{
         color: $textColorLight2;
         display: inline-block;
@@ -1060,6 +1060,63 @@
         }
         .commentSectionImg{
             width: 48%;
+        }
+    }
+}
+.aboutUsPageBack{
+    .aboutUsPage{
+        .aboutUsSectionOne{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 60px 0px 30px 0px;
+            .aboutUsSeOneRight{
+                width: 40%;
+            }
+            .aboutUsSeOneLeft{
+                width: 45%;
+                .aboutUsIconsSec{
+                    .aboutUsIconParent{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+                        &:hover{
+                            h5{
+                                color: $textColorLight2;
+                            }
+                            .svgIconPart{
+                                background-color: darken($mainColor,5%);
+                            }
+                            p{
+                                color: $textColorLight;
+                            }
+                        }
+                        .svgIconPart{
+                            width: 65px;
+                            height: 65px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 100%;
+                            background-color: #197dbb;
+                            transition: all 0.4s;
+                        }
+                        .taxtPart{
+                            width: 80%;
+                            h5{
+                                margin-top: 0px;
+                                margin-bottom: 10px;
+                                transition: all 0.4s;
+                            }
+                            p{
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
