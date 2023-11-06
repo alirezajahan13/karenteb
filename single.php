@@ -58,24 +58,24 @@ get_header();
 
 					// Display related posts with title and thumbnail
 					if ($related_posts_query->have_posts()) {
-						echo '<div class="relatedPostsInSingle">';
-						echo '<h3>بیشتر بخوانید</h3>';
-						echo '<div class="relatedPostsInSingleList">';
+						echo '<div class="relatedPostsInSingle sectionPadding">';
+						echo '<h2 class="highMargined centeredText">بیشتر بخوانید</h2>';
+						echo '<div class="relatedPostsInSingleList highSingleBox">';
 						while ($related_posts_query->have_posts()) {
 							$related_posts_query->the_post();
 							?>
 							<a href="<?php the_permalink(); ?>" class="related-post">
 								<?php if (has_post_thumbnail()) : ?>
-									<div class="related-post-thumbnail">
-										<?php the_post_thumbnail('thumbnail'); // You can change 'thumbnail' to other image size ?>
-									</div>
+									<?php the_post_thumbnail('thumbnail'); // You can change 'thumbnail' to other image size ?>
 								<?php endif; ?>
 								<h3><?php the_title(); ?></h3>
+								<!-- <span>مجله کارن طب</span> -->
 							</a>
 							<?php
 						}
-						echo '</div>'; // .related-posts-list
-						echo '</div>'; // .related-posts
+						echo '</div>';
+						echo '<a class="generalButton outlineButton readMoreInSingle" href="#">دیدن همه</a>';
+						echo '</div>';
 					}
 
 					// Reset post data

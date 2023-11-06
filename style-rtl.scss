@@ -43,6 +43,7 @@
                     }
                     a{
                         padding: 5px 10px;
+                        cursor: pointer;
                     }
                 }
                 .current-menu-item{
@@ -78,8 +79,14 @@
                             &:last-child{
                                 border-bottom: none;
                             }
+                            &:hover{
+                                a{
+                                    color: #187dba;
+                                }
+                            }
                             a{
                                 padding: 7px;
+                                transition: all 0.4s;
                             }
                         }
                     }
@@ -1071,11 +1078,24 @@
             justify-content: space-between;
             align-items: center;
             margin: 60px 0px 30px 0px;
+            @include xs{
+                margin-top: 30px;
+            }
             .aboutUsSeOneRight{
                 width: 40%;
+                @include xs{
+                    width: 100%;
+                    p{
+                        text-align: justify;
+                    }
+                }
             }
             .aboutUsSeOneLeft{
                 width: 45%;
+                @include xs{
+                    width: 100%;
+                    margin-top: 20px;
+                }
                 .aboutUsIconsSec{
                     .aboutUsIconParent{
                         display: flex;
@@ -1102,21 +1122,169 @@
                             border-radius: 100%;
                             background-color: #197dbb;
                             transition: all 0.4s;
+                            @include xs{
+                                width: 55px;
+                                height: 55px;
+                                svg{
+                                    width: 35px;
+                                    height: 35px;
+                                }
+                            }
                         }
                         .taxtPart{
                             width: 80%;
+                            @include sm{
+                                width: 75%;
+                            }
                             h5{
                                 margin-top: 0px;
                                 margin-bottom: 10px;
                                 transition: all 0.4s;
+                                @include xs{
+                                    font-size: 15px;
+                                }
                             }
                             p{
                                 margin-bottom: 0px;
+                                @include sm{
+                                    font-size: 13px;
+                                }
                             }
                         }
                     }
                 }
             }
         }
+        .aboutUsSectionTwo{
+            .sectionTwoInner{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .textSection{
+                    width: 47%;
+                    @include xs{
+                        width: 100%;
+                    }
+                    h4{
+                        margin-top: 0px;
+                    }
+                }
+                .imgSection{
+                    width: 44%;
+                    @include xs{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .aboutUsSectionThree{
+            margin-bottom: 20px;
+        }
+    }
+}
+.contactUsPageBack{
+    .contactUsPage{
+        .changeColorHeader{
+            display: inline-block;
+        }
+        .contactUsSectionOne{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .connect{
+                display: flex;
+                flex-direction: column;
+                @include xs{
+                    width: 45%;
+                }
+                a{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    transition: all 0.4s;
+                    svg{
+                        margin-left: 5px;
+                    }
+                    &:hover{
+                        span{
+                            color: #187dba;
+                        }
+                    }
+                }
+            }
+            .address{
+                width: 18%;
+                @include xs{
+                    width: 100%;
+                    order: 3;
+                }
+                a{
+                    align-items: start;
+                }
+                span{
+                    width: 90%;
+                }
+            }
+        }
+        .contactUsSectionTwo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            .SectionLRight{
+                width: 40%;
+                @include xs{
+                    width: 100%;
+                }
+                textarea{
+                    margin-right: 0px;
+                }
+            }
+            .SectionLeft{
+                @include xs{
+                    width: 100%;
+                    iframe{
+                        width: inherit;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+.relatedPostsInSingle{
+    .relatedPostsInSingleList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .related-post{
+            position: relative;
+            display: block;
+            img{
+                width: 280px;
+                height: 220px;
+                border-radius: 7px;
+            }
+            h3{
+                position: absolute;
+                z-index: 9;
+                bottom: 8px;
+                right: 0;
+                left: 0;
+                text-align: center;
+                color: #fff;
+                background-color: rgba(24, 125, 186, 0.58);
+                padding: 12px;
+                margin: 0;
+                border-radius: 0px 0px 7px 7px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+    .readMoreInSingle{
+        
     }
 }
