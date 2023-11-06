@@ -65,7 +65,7 @@
 }
 body {
   font-family: danaweb !important;
-  direction: rtl;
+  direction: rtl !important;
   margin: 0;
   overflow-x: hidden !important;
   width: 100% !important;
@@ -500,7 +500,7 @@ select option {
   border-radius: 100%;
 }
 .generalButton::after {
-  content: url("data:image/svg+xml,%3Csvg width='14' height='14' fill='%23197dbb' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg' transform='rotate(-90)'%3E%3Cpath d='M27.66 15.61 18 6l-9.66 9.61A1 1 0 1 0 9.75 17L17 9.81v19.13a1 1 0 1 0 2 0V9.81L26.25 17a1 1 0 0 0 1.41-1.42Z' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%230B3152' viewBox='0 0 36 36' transform='rotate(-90)'%3E%3Cpath d='M27.66 15.61 18 6l-9.66 9.61A1 1 0 1 0 9.75 17L17 9.81v19.13a1 1 0 1 0 2 0V9.81L26.25 17a1 1 0 0 0 1.41-1.42Z' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
   height: 17px;
   position: absolute;
   left: 19px;
@@ -525,8 +525,8 @@ select option {
 
 .outlineButton {
   background-color: transparent;
-  color: #399edb !important;
-  border: 1px solid #399edb;
+  color: #0B3152 !important;
+  border: 1px solid #0B3152;
 }
 .outlineButton:hover {
   background-color: #ddeef9;
@@ -690,6 +690,7 @@ select option {
 }
 .mainHeaderBack .mainHeader .menuSection ul li a {
   padding: 5px 10px;
+  cursor: pointer;
 }
 .mainHeaderBack .mainHeader .menuSection ul .current-menu-item a {
   color: #187dba !important;
@@ -721,8 +722,12 @@ select option {
 .mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li:last-child {
   border-bottom: none;
 }
+.mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li:hover a {
+  color: #187dba;
+}
 .mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li a {
   padding: 7px;
+  transition: all 0.4s;
 }
 .mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children a svg {
   margin-right: 5px;
@@ -1743,11 +1748,30 @@ li .children li .comment-body {
   align-items: center;
   margin: 60px 0px 30px 0px;
 }
+@media screen and (max-width: 480px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne {
+    margin-top: 30px;
+  }
+}
 .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneRight {
   width: 40%;
 }
+@media screen and (max-width: 480px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneRight {
+    width: 100%;
+  }
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneRight p {
+    text-align: justify;
+  }
+}
 .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft {
   width: 45%;
+}
+@media screen and (max-width: 480px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent {
   display: flex;
@@ -1774,14 +1798,169 @@ li .children li .comment-body {
   background-color: #197dbb;
   transition: all 0.4s;
 }
+@media screen and (max-width: 480px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .svgIconPart {
+    width: 55px;
+    height: 55px;
+  }
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .svgIconPart svg {
+    width: 35px;
+    height: 35px;
+  }
+}
 .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart {
   width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart {
+    width: 75%;
+  }
 }
 .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart h5 {
   margin-top: 0px;
   margin-bottom: 10px;
   transition: all 0.4s;
 }
+@media screen and (max-width: 480px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart h5 {
+    font-size: 15px;
+  }
+}
 .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart p {
   margin-bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionOne .aboutUsSeOneLeft .aboutUsIconsSec .aboutUsIconParent .taxtPart p {
+    font-size: 13px;
+  }
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionTwo .sectionTwoInner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionTwo .sectionTwoInner .textSection {
+  width: 47%;
+}
+@media screen and (max-width: 480px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionTwo .sectionTwoInner .textSection {
+    width: 100%;
+  }
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionTwo .sectionTwoInner .textSection h4 {
+  margin-top: 0px;
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionTwo .sectionTwoInner .imgSection {
+  width: 44%;
+}
+@media screen and (max-width: 480px) {
+  .aboutUsPageBack .aboutUsPage .aboutUsSectionTwo .sectionTwoInner .imgSection {
+    width: 100%;
+  }
+}
+.aboutUsPageBack .aboutUsPage .aboutUsSectionThree {
+  margin-bottom: 20px;
+}
+
+.contactUsPageBack .contactUsPage .changeColorHeader {
+  display: inline-block;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionOne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionOne .connect {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .contactUsPageBack .contactUsPage .contactUsSectionOne .connect {
+    width: 45%;
+  }
+}
+.contactUsPageBack .contactUsPage .contactUsSectionOne .connect a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all 0.4s;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionOne .connect a svg {
+  margin-left: 5px;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionOne .connect a:hover span {
+  color: #187dba;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionOne .address {
+  width: 18%;
+}
+@media screen and (max-width: 480px) {
+  .contactUsPageBack .contactUsPage .contactUsSectionOne .address {
+    width: 100%;
+    order: 3;
+  }
+}
+.contactUsPageBack .contactUsPage .contactUsSectionOne .address a {
+  align-items: start;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionOne .address span {
+  width: 90%;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionTwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionTwo .SectionLRight {
+  width: 40%;
+}
+@media screen and (max-width: 480px) {
+  .contactUsPageBack .contactUsPage .contactUsSectionTwo .SectionLRight {
+    width: 100%;
+  }
+}
+.contactUsPageBack .contactUsPage .contactUsSectionTwo .SectionLRight textarea {
+  margin-right: 0px;
+}
+@media screen and (max-width: 480px) {
+  .contactUsPageBack .contactUsPage .contactUsSectionTwo .SectionLeft {
+    width: 100%;
+  }
+  .contactUsPageBack .contactUsPage .contactUsSectionTwo .SectionLeft iframe {
+    width: inherit;
+    height: 250px;
+  }
+}
+
+.relatedPostsInSingle .relatedPostsInSingleList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.relatedPostsInSingle .relatedPostsInSingleList .related-post {
+  position: relative;
+  display: block;
+}
+.relatedPostsInSingle .relatedPostsInSingleList .related-post img {
+  width: 280px;
+  height: 220px;
+  border-radius: 7px;
+}
+.relatedPostsInSingle .relatedPostsInSingleList .related-post h3 {
+  position: absolute;
+  z-index: 9;
+  bottom: 8px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(24, 125, 186, 0.58);
+  padding: 12px;
+  margin: 0;
+  border-radius: 0px 0px 7px 7px;
+  font-size: 14px;
+  font-weight: 500;
 }/*# sourceMappingURL=style-rtl.css.map */
