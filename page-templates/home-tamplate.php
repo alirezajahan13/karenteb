@@ -253,10 +253,10 @@ get_header();
             <h2>آخرین نوشته های بلاگ</h2>
             <span>تولید محصولات با کیفیت مطابق با آخرین استانداردهای روز دنیا</span>
         </div>
-        <div class="blogPostHome">
+        <!-- <div class="blogPostHome">
             <div class="sectionOne">
                 <a href="">
-                    <img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/x-c-0072.jpg" alt="">
+                    <img class="lowRadius" src="<?php //echo get_template_directory_uri() ?>/img/x-c-0072.jpg" alt="">
                     <h3>مجله کارن طب</h3>
                 </a>
             </div>
@@ -264,25 +264,60 @@ get_header();
                 <div class="sectionThreeFourP">
                     <div class="sectionThree">
                         <a href="">
-                            <img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0379.jpg" alt="">
+                            <img class="lowRadius" src="<?php //echo get_template_directory_uri() ?>/img/oxy-pro-0379.jpg" alt="">
                             <h3>مجله کارن طب</h3>
                         </a>
                     </div>
                     <div class="sectionFour">
                         <a href="">
-                            <img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/xgunhero.jpg" alt="">
+                            <img class="lowRadius" src="<?php //echo get_template_directory_uri() ?>/img/xgunhero.jpg" alt="">
                             <h3>مجله کارن طب</h3>
                         </a>
                     </div>
                 </div>
                 <div class="sectionFive">
                     <a href="">
-                        <img class="lowRadius" src="<?php echo get_template_directory_uri() ?>/img/oxy-pro-0324.jpg" alt="">
+                        <img class="lowRadius" src="<?php //echo get_template_directory_uri() ?>/img/oxy-pro-0324.jpg" alt="">
                         <h3>مجله کارن طب</h3>
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <?php
+            // Query for the 4 most recent posts
+            $recent_posts_args = array(
+                'posts_per_page' => 4,
+                'orderby' => 'date',
+                'order' => 'DESC',
+            );
+
+            $recent_posts_query = new WP_Query($recent_posts_args);
+
+            // Display the 4 most recent posts with title and full-size thumbnail
+            if ($recent_posts_query->have_posts()) {
+                echo '<div class="recentPostsHome">';
+                echo '<div class="recentPostsHomeList">';
+                
+                // Loop through the recent posts
+                while ($recent_posts_query->have_posts()) {
+                    $recent_posts_query->the_post();
+                    ?>
+                    <a href="<?php the_permalink(); ?>" class="recent-post">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail('full'); // Use 'full' to display the full-size thumbnail ?>
+                        <?php endif; ?>
+                        <h3><?php the_title(); ?></h3>
+                    </a>
+                    <?php
+                }
+
+                echo '</div>';
+                echo '</div>';
+            }
+
+            // Reset post data
+            wp_reset_postdata();
+        ?>
     </div>
 </div>
 

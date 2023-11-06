@@ -1598,12 +1598,24 @@ select option {
   max-width: 950px;
 }
 
+@media screen and (max-width: 480px) {
+  .generalSinglePostStyle .entry-content {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
 .generalSinglePostStyle .entry-header, .generalSinglePostStyle .archivePostFooter {
   background-color: #f4f7fe;
 }
 .generalSinglePostStyle .entry-header .entry-title, .generalSinglePostStyle .archivePostFooter .entry-title {
   margin: 0;
   padding: 30px 0 0 0;
+}
+@media screen and (max-width: 480px) {
+  .generalSinglePostStyle .entry-header .entry-title, .generalSinglePostStyle .archivePostFooter .entry-title {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
 }
 .generalSinglePostStyle .post-thumbnail {
   border-radius: 8px;
@@ -1614,12 +1626,24 @@ select option {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 480px) {
+  .generalSinglePostStyle .post-thumbnail img {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
 .generalSinglePostStyle .excerptSinglePostBack {
   padding: 30px 0;
 }
 .generalSinglePostStyle .excerptSinglePostBack .excerptSinglePost p {
   margin-bottom: 0;
   text-align: justify;
+}
+@media screen and (max-width: 480px) {
+  .generalSinglePostStyle .excerptSinglePostBack .excerptSinglePost p {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
 }
 .generalSinglePostStyle .archivePostFooter {
   display: flex;
@@ -1629,6 +1653,13 @@ select option {
 }
 .generalSinglePostStyle .archivePostFooter .dateSinglePost {
   margin-left: 80px;
+}
+
+@media screen and (max-width: 480px) {
+  .commentBoxSingle {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
 }
 
 .comments-title {
@@ -1652,6 +1683,13 @@ li .comment-body .comment-meta {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 480px) {
+  li .comment-body .comment-meta {
+    align-items: normal;
+    flex-direction: column;
+    font-size: 12px;
+  }
+}
 li .comment-body .comment-meta .comment-author {
   display: flex;
   align-items: center;
@@ -1662,9 +1700,19 @@ li .comment-body .comment-meta .comment-author img {
   border-radius: 100%;
   margin: 0px 0px 5px 20px;
 }
+@media screen and (max-width: 480px) {
+  li .comment-body .comment-meta .comment-author .fn {
+    margin-left: 3px;
+  }
+}
 li .comment-body .comment-meta .comment-metadata a time {
   font-size: 14px;
   color: #828282;
+}
+@media screen and (max-width: 480px) {
+  li .comment-body .comment-content p {
+    font-size: 13px;
+  }
 }
 li .children {
   margin: 0;
@@ -1683,6 +1731,22 @@ li .children li .comment-body {
   padding: 0 !important;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 480px) {
+  .comment-list {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+.comment-list li {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .comments-title {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
 }
 
 .comment-reply-link {
@@ -1705,6 +1769,12 @@ li .children li .comment-body {
 }
 .commentBoxParent .commentBoxSingle .commentSection {
   width: 48%;
+}
+@media screen and (max-width: 480px) {
+  .commentBoxParent .commentBoxSingle .commentSection {
+    width: 100%;
+    order: 2;
+  }
 }
 .commentBoxParent .commentBoxSingle .commentSection .comment-respond .comment-notes {
   font-size: 13.5px;
@@ -1739,6 +1809,12 @@ li .children li .comment-body {
 }
 .commentBoxParent .commentBoxSingle .commentSectionImg {
   width: 48%;
+}
+@media screen and (max-width: 480px) {
+  .commentBoxParent .commentBoxSingle .commentSectionImg {
+    width: 100%;
+    order: 1;
+  }
 }
 
 .aboutUsPageBack .aboutUsPage .aboutUsSectionOne {
@@ -1871,6 +1947,11 @@ li .children li .comment-body {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 480px) {
+  .contactUsPageBack .contactUsPage .contactUsSectionOne {
+    justify-content: start;
+  }
+}
 .contactUsPageBack .contactUsPage .contactUsSectionOne .connect {
   display: flex;
   flex-direction: column;
@@ -1935,14 +2016,30 @@ li .children li .comment-body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .relatedPostsInSingle {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
 .relatedPostsInSingle .relatedPostsInSingleList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  .relatedPostsInSingle .relatedPostsInSingleList {
+    justify-content: center;
+  }
+}
 .relatedPostsInSingle .relatedPostsInSingleList .related-post {
   position: relative;
   display: block;
+}
+@media screen and (max-width: 480px) {
+  .relatedPostsInSingle .relatedPostsInSingleList .related-post {
+    margin-bottom: 10px;
+  }
 }
 .relatedPostsInSingle .relatedPostsInSingleList .related-post img {
   width: 280px;
@@ -1963,4 +2060,7 @@ li .children li .comment-body {
   border-radius: 0px 0px 7px 7px;
   font-size: 14px;
   font-weight: 500;
+}
+.relatedPostsInSingle .readMoreInSingle {
+  margin: 30px auto 0px auto;
 }/*# sourceMappingURL=style-rtl.css.map */
