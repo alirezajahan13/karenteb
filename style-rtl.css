@@ -1245,101 +1245,6 @@ select option {
   }
 }
 
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome {
-  display: flex;
-  justify-content: space-around;
-}
-@media screen and (max-width: 480px) {
-  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome {
-    flex-direction: column;
-    margin: auto;
-    width: 80%;
-  }
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome a {
-  display: block;
-  position: relative;
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome a h3 {
-  position: absolute;
-  z-index: 9;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  text-align: center;
-  color: #fff;
-  background-color: rgba(24, 125, 186, 0.58);
-  padding: 20px;
-  margin: 0;
-  border-radius: 0px 0px 7px 7px;
-}
-@media screen and (max-width: 480px) {
-  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome a h3 {
-    padding: 10px !important;
-  }
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne {
-  width: 48%;
-  height: 710px;
-}
-@media screen and (max-width: 480px) {
-  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne {
-    width: 100%;
-    height: 350px;
-    margin-bottom: 10px;
-  }
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne a {
-  overflow: hidden;
-  height: 100%;
-  position: relative;
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionOne a img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  height: 710px;
-}
-@media screen and (max-width: 480px) {
-  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo {
-    height: 350px;
-    width: 100%;
-  }
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-@media screen and (max-width: 480px) {
-  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP {
-    margin-bottom: 0px;
-  }
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionThree, .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionFour {
-  width: 48%;
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionThree h3, .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionFour h3 {
-  bottom: 10px !important;
-  padding: 10px;
-  font-size: 16px;
-}
-@media screen and (max-width: 480px) {
-  .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionThree h3, .blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionThreeFourP .sectionFour h3 {
-    padding: 4px !important;
-    font-size: 14px !important;
-  }
-}
-.blogPostSectionHomeBack .blogPostSectionHome .blogPostHome .sectionTwo .sectionFive h3 {
-  bottom: 10px !important;
-}
-
 .mobileMenuParent {
   padding: 5px 10px 0px 10px;
   position: fixed;
@@ -2025,7 +1930,7 @@ li .children li .comment-body {
 .relatedPostsInSingle .relatedPostsInSingleList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (max-width: 480px) {
   .relatedPostsInSingle .relatedPostsInSingleList {
@@ -2035,6 +1940,7 @@ li .children li .comment-body {
 .relatedPostsInSingle .relatedPostsInSingleList .related-post {
   position: relative;
   display: block;
+  margin: 0px 10px;
 }
 @media screen and (max-width: 480px) {
   .relatedPostsInSingle .relatedPostsInSingleList .related-post {
@@ -2063,4 +1969,126 @@ li .children li .comment-body {
 }
 .relatedPostsInSingle .readMoreInSingle {
   margin: 30px auto 0px auto;
+}
+
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 5.5vw);
+  grid-gap: 15px;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    grid-gap: 0px;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a {
+  position: relative;
+  display: block;
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(1) {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(1) h3 {
+  font-size: 13px;
+  padding: 10px;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(1) h3 {
+    padding: 8px 2px;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(2) {
+    width: 49%;
+    margin-left: auto;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(2) h3 {
+  font-size: 13px;
+  padding: 10px;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(2) h3 {
+    font-size: 11px;
+    padding: 5px 0px;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(3) {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(3) {
+    width: 49%;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(3) h3 {
+    font-size: 11px;
+    padding: 5px 0px;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(4) {
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a:nth-child(4) h3 {
+    padding: 8px 2px;
+    font-size: 13px;
+  }
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 7px;
+}
+.blogPostSectionHomeBack .blogPostSectionHome .recentPostsHome .recentPostsHomeList a h3 {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(24, 125, 186, 0.58);
+  padding: 25px 10px;
+  margin: 0;
+  border-radius: 0px 0px 7px 7px;
+  font-size: 18px;
+  font-weight: 500;
 }/*# sourceMappingURL=style-rtl.css.map */
