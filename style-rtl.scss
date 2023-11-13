@@ -3,7 +3,7 @@
 @import 'sass/source';
 
 .mainHeaderBack{
-    background-color: $backColorLight3;
+    background-color: transparent;
     @include sm{
         display: none;
     }
@@ -64,7 +64,7 @@
                         background-color: #fff;
                         display: flex;
                         flex-direction: column;
-                        width: 120px;
+                        width: 160px;
                         right: 20px;
                         visibility: hidden; 
                         opacity: 0; 
@@ -136,9 +136,9 @@
         }
     }
 }
-.blog{
+.home , .single-post , .single-product{
     .mainHeaderBack{
-        background-color: transparent;
+        background-color: $backColorLight3;
     }
 }
 .stickyHeaderParent{
@@ -429,6 +429,25 @@
         }
         .descProductImg{
             width: 40%;
+            .ProductImgSwiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px;
+                        background: transparent !important;
+                        box-shadow: none !important;
+                        img{
+                            border-radius: 10px;
+                            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
+                        }
+                        .swiper-slide-shadow{
+                            background: transparent !important;    
+                        }
+                    }
+                }
+            }
             @include xs{
                 width: 80%;
             }
@@ -689,6 +708,12 @@
                     display: none;
                     padding: 0px 5px;
                     font-size: 14px;
+                    li{
+                        a{
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
                 }
             }
         }
@@ -1470,6 +1495,129 @@
                         font-size: 18px;
                         font-weight: 500;
                     }
+                }
+            }
+        }
+    }
+}
+.employmentPageBack{
+    .employmentPageBack{
+        .changeColorHeader{
+            display: inline-block;
+        }
+        .empPageDesc{
+            p{
+                margin: 0;
+                @include xs{
+                    font-size: 13.5px;
+                }
+            }
+        }
+        .empFormParent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .empFormCol{
+                width: 45%;
+                @include xs{
+                    width: 100%;
+                }
+                .empSubmit{
+                    margin-top: 28px !important;
+                    padding: 10px !important;
+                }
+            }
+        }
+    }
+}
+.cetificatePageBack{
+    .certificatePage{
+        .changeColorHeader{
+            display: inline-block;
+        }
+        .certificateSectionOne{
+            .textBox{
+                margin-bottom: 40px;
+                p{
+                    line-height: 32px;
+                    @include xs{
+                        font-size: 13.5px;
+                    }
+                }
+                a{
+                    @include xs{
+                        font-size: 13.5px !important;
+                    }
+                }
+            }
+            .ImagesPart{
+                display: grid;
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+                grid-gap: 30px;
+                margin-bottom: 30px;
+                @include sm{
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    grid-gap: 25px;
+                }
+                @include xs{
+                    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+                    grid-gap: 20px !important;
+                }
+                img{
+                    border-radius: 8px;
+                    width: 230px;
+                    height: 250px;
+                    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                    transition: all 0.4s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+.faqPageBack{
+    .faqPage{
+            .faq{
+                padding: 5px 0px;
+                cursor: pointer;
+                .question{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    svg{
+                        padding-left: 7px;
+                        width: max-content;
+                    }
+                }
+                .answer{
+                    display: none;
+                    margin-right: 15px;
+                }
+            }
+    }
+}
+.freeDemoPageBack{
+    .freeDemoPage{
+        .freeDemoSection{
+            .demoFormParent{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .demoFormSectionOne , .demoFormSectionTwo{
+                    width: 45%;
+                    @include xs{
+                        width: 100%;
+                    }
+                }
+                textarea{
+                    height: 160px;
                 }
             }
         }

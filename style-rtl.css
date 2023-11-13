@@ -437,7 +437,6 @@ textarea {
   border: none;
   color: #0B3152;
   font-size: 14px;
-  margin-right: -15px;
 }
 textarea::-webkit-input-placeholder {
   color: #373c60;
@@ -466,7 +465,13 @@ select {
   padding: 15px 10px;
   border: 1px solid #e2e5fc;
   font-family: danaweb;
-  background-color: transparent;
+  background-color: #ebecf0;
+  border-radius: 45px;
+}
+@media screen and (max-width: 480px) {
+  select {
+    padding: 10px 10px !important;
+  }
 }
 select option {
   font-family: iranyekanfn;
@@ -639,7 +644,7 @@ select option {
 }
 
 .mainHeaderBack {
-  background-color: #f4f7fe;
+  background-color: transparent;
 }
 @media screen and (max-width: 768px) {
   .mainHeaderBack {
@@ -705,7 +710,7 @@ select option {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  width: 120px;
+  width: 160px;
   right: 20px;
   visibility: hidden;
   opacity: 0;
@@ -775,8 +780,8 @@ select option {
   }
 }
 
-.blog .mainHeaderBack {
-  background-color: transparent;
+.home .mainHeaderBack, .single-post .mainHeaderBack, .single-product .mainHeaderBack {
+  background-color: #f4f7fe;
 }
 
 .stickyHeaderParent {
@@ -1115,6 +1120,21 @@ select option {
 .descProductSectionHomeBack .descProductSectionHome .descProductImg {
   width: 40%;
 }
+.descProductSectionHomeBack .descProductSectionHome .descProductImg .ProductImgSwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.descProductSectionHomeBack .descProductSectionHome .descProductImg .ProductImgSwiper .swiper-wrapper .swiper-slide img {
+  border-radius: 10px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
+}
+.descProductSectionHomeBack .descProductSectionHome .descProductImg .ProductImgSwiper .swiper-wrapper .swiper-slide .swiper-slide-shadow {
+  background: transparent !important;
+}
 @media screen and (max-width: 480px) {
   .descProductSectionHomeBack .descProductSectionHome .descProductImg {
     width: 80%;
@@ -1296,6 +1316,10 @@ select option {
   display: none;
   padding: 0px 5px;
   font-size: 14px;
+}
+.mobileMenuParent .mainMenu ul .menu-item-has-children .sub-menu li a {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .mainSiteOverlay {
@@ -2091,4 +2115,122 @@ li .children li .comment-body {
   border-radius: 0px 0px 7px 7px;
   font-size: 18px;
   font-weight: 500;
+}
+
+.employmentPageBack .employmentPageBack .changeColorHeader {
+  display: inline-block;
+}
+.employmentPageBack .employmentPageBack .empPageDesc p {
+  margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .employmentPageBack .employmentPageBack .empPageDesc p {
+    font-size: 13.5px;
+  }
+}
+.employmentPageBack .employmentPageBack .empFormParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.employmentPageBack .employmentPageBack .empFormParent .empFormCol {
+  width: 45%;
+}
+@media screen and (max-width: 480px) {
+  .employmentPageBack .employmentPageBack .empFormParent .empFormCol {
+    width: 100%;
+  }
+}
+.employmentPageBack .employmentPageBack .empFormParent .empFormCol .empSubmit {
+  margin-top: 28px !important;
+  padding: 10px !important;
+}
+
+.cetificatePageBack .certificatePage .changeColorHeader {
+  display: inline-block;
+}
+.cetificatePageBack .certificatePage .certificateSectionOne .textBox {
+  margin-bottom: 40px;
+}
+.cetificatePageBack .certificatePage .certificateSectionOne .textBox p {
+  line-height: 32px;
+}
+@media screen and (max-width: 480px) {
+  .cetificatePageBack .certificatePage .certificateSectionOne .textBox p {
+    font-size: 13.5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cetificatePageBack .certificatePage .certificateSectionOne .textBox a {
+    font-size: 13.5px !important;
+  }
+}
+.cetificatePageBack .certificatePage .certificateSectionOne .ImagesPart {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .cetificatePageBack .certificatePage .certificateSectionOne .ImagesPart {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cetificatePageBack .certificatePage .certificateSectionOne .ImagesPart {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-gap: 20px !important;
+  }
+}
+.cetificatePageBack .certificatePage .certificateSectionOne .ImagesPart img {
+  border-radius: 8px;
+  width: 230px;
+  height: 250px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.cetificatePageBack .certificatePage .certificateSectionOne .ImagesPart img:hover {
+  transform: scale(1.1);
+}
+
+.faqPageBack .faqPage .faq {
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.faqPageBack .faqPage .faq .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faqPageBack .faqPage .faq .question h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.faqPageBack .faqPage .faq .question svg {
+  padding-left: 7px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.faqPageBack .faqPage .faq .answer {
+  display: none;
+  margin-right: 15px;
+}
+
+.freeDemoPageBack .freeDemoPage .freeDemoSection .demoFormParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.freeDemoPageBack .freeDemoPage .freeDemoSection .demoFormParent .demoFormSectionOne, .freeDemoPageBack .freeDemoPage .freeDemoSection .demoFormParent .demoFormSectionTwo {
+  width: 45%;
+}
+@media screen and (max-width: 480px) {
+  .freeDemoPageBack .freeDemoPage .freeDemoSection .demoFormParent .demoFormSectionOne, .freeDemoPageBack .freeDemoPage .freeDemoSection .demoFormParent .demoFormSectionTwo {
+    width: 100%;
+  }
+}
+.freeDemoPageBack .freeDemoPage .freeDemoSection .demoFormParent textarea {
+  height: 160px;
 }/*# sourceMappingURL=style-rtl.css.map */

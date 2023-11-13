@@ -89,22 +89,6 @@ get_header();
         </div>
     </div>
 </div>
-<div class="descProductSectionHomeBack">
-    <img src="<?php bloginfo('template_directory')?>/img/back-vectors/Vector.svg" alt="">
-    <div class="descProductSectionHome mainView">
-        <div class="descProductText">
-            <div class="generalHeading highMargined">
-                <h3>کربوکسی تراپی چیست؟</h3>
-            </div>
-            <p>کربوکسی تراپی در واقع یک نوع مزوتراپی است که به جای تزریق مایعات مزوتراپی از گاز دی اکسید کربن استفاده می‌شود. پزشک متخصص گاز co2 را در زیر پوست از طریق سوزن تزریق می کند. مکانیسم عمل کربوکسی تراپی از طریق بهبود گردش خون است که در نتیجه خاصیت ارتجاعی پوست را افزایش می‌دهد و اکسیژن رسانی به آن ناحیه را بهبود می‌دهد.</p>
-            <a class="generalButton noArrowButton" href="#">ثبت سفارش</a>
-        </div>
-        <div class="descProductImg">
-            <img src="<?php echo get_template_directory_uri() ?>/img/banner-home.png" alt="کارن-طب"> 
-        </div>
-    </div>
-    <img src="<?php bloginfo('template_directory')?>/img/back-vectors/Vector.svg" alt="">
-</div>
 <div class="serviceSectionHomeBack sectionPadding">
     <div class="serviceSectionHome mainView">
         <div class="generalHeading highMargined centeredText">
@@ -144,7 +128,7 @@ get_header();
 </div>
 <div class="descProductSectionHomeBack">
     <img src="<?php bloginfo('template_directory')?>/img/back-vectors/Vector.svg" alt="">
-    <div class="descProductSectionHome mainView differentSection">
+    <div class="descProductSectionHome mainView mediumMargined">
         <div class="descProductText">
             <div class="generalHeading highMargined">
                 <h3>کربوکسی تراپی چیست؟</h3>
@@ -153,7 +137,20 @@ get_header();
             <a class="generalButton noArrowButton" href="#">ثبت سفارش</a>
         </div>
         <div class="descProductImg">
-            <img src="<?php echo get_template_directory_uri() ?>/img/banner-home.png" alt="کارن-طب"> 
+            <!-- <img src="<?php //echo get_template_directory_uri() ?>/img/banner-home.png" alt="کارن-طب">  -->
+            <div class="swiper ProductImgSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <img src="<?php echo get_template_directory_uri() ?>/img/دستگاه-کربوسی-300x300.jpg" alt=""> 
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/دستگاه-پلاسما-پن-کارن-طب-300x300.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/فیس-پد-300x300.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <img src="<?php bloginfo('template_directory')?>/img/back-vectors/Vector.svg" alt="">
@@ -218,22 +215,6 @@ get_header();
             </div>
         </div>
     </div>
-</div>
-<div class="descProductSectionHomeBack">
-    <img src="<?php bloginfo('template_directory')?>/img/back-vectors/Vector.svg" alt="">
-    <div class="descProductSectionHome mainView">
-        <div class="descProductText">
-            <div class="generalHeading highMargined">
-                <h3>کربوکسی تراپی چیست؟</h3>
-            </div>
-            <p>کربوکسی تراپی در واقع یک نوع مزوتراپی است که به جای تزریق مایعات مزوتراپی از گاز دی اکسید کربن استفاده می‌شود. پزشک متخصص گاز co2 را در زیر پوست از طریق سوزن تزریق می کند. مکانیسم عمل کربوکسی تراپی از طریق بهبود گردش خون است که در نتیجه خاصیت ارتجاعی پوست را افزایش می‌دهد و اکسیژن رسانی به آن ناحیه را بهبود می‌دهد.</p>
-            <a class="generalButton noArrowButton" href="#">ثبت سفارش</a>
-        </div>
-        <div class="descProductImg">
-            <img src="<?php echo get_template_directory_uri() ?>/img/banner-home.png" alt="کارن-طب"> 
-        </div>
-    </div>
-    <img src="<?php bloginfo('template_directory')?>/img/back-vectors/Vector.svg" alt="">
 </div>
 <div class="freeDemoSectionHomeBack sectionPadding">
     <div class="freeDemoSectionHome mainView">

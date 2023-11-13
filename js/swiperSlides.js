@@ -22,4 +22,12 @@ var swiper = new Swiper(".productsSwiper", {
           spaceBetween: 30,
         },
       },
-  });
+});
+
+var swiper = new Swiper(".ProductImgSwiper", {
+  effect: "cards",
+  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+  },
+});

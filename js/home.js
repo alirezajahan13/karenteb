@@ -32,4 +32,12 @@ $(document).ready(function(){
         let mobHeaderHeight = $('.mobileMenuParent').outerHeight(true) + 0;
         $('body').css('padding-top',mobHeaderHeight);
     }
+    $('.faq > .question').click(function(){
+        $('.faq > .answer').slideUp(300);
+        if ($(this).siblings(".answer").css('display') == 'block') {
+            $(this).siblings('.answer').slideUp(500);
+        } else {
+            $(this).siblings('.answer').slideToggle(500);
+        }
+    });
 });
