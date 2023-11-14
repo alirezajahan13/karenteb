@@ -17,13 +17,27 @@ get_header();
                 <a class="generalButton outlineButton" href="#">ارتباط با ما</a>
             </div>
             <div class="ImagesPart">
-                <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg1.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg2.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg3.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg4.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg5.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg6.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg7.jpeg" alt="">
+                <a href="<?php echo get_template_directory_uri()?>/img/certificate/lg1.jpg">
+                    <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg1.jpg" alt="">
+                </a>
+                <a href="<?php echo get_template_directory_uri()?>/img/certificate/lg2.jpg">
+                    <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg2.jpg" alt="">
+                </a>
+                <a href="<?php echo get_template_directory_uri()?>/img/certificate/lg3.jpg">
+                    <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg3.jpg" alt="">
+                </a>
+                <a href="<?php echo get_template_directory_uri()?>/img/certificate/lg4.jpg">
+                    <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg4.jpg" alt="">
+                </a>
+                <a href="<?php echo get_template_directory_uri()?>/img/certificate/lg5.jpg">
+                    <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg5.jpg" alt="">
+                </a>
+                <a href="<?php echo get_template_directory_uri()?>/img/certificate/lg6.jpg">
+                    <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg6.jpg" alt="">
+                </a>
+                <a href="<?php echo get_template_directory_uri()?>/img/certificate/lg7.jpeg">
+                    <img src="<?php echo get_template_directory_uri()?>/img/certificate/lg7.jpeg" alt="">
+                </a>
             </div>
         </div>
     </div>
