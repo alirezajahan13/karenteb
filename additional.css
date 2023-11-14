@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   line-height: 27px;
-  color: #565656;
+  color: #494949;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -247,6 +247,10 @@ p {
 
 .lightBorder {
   border: 1px solid #f0f5fc;
+}
+
+.lighterBorder {
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .bgLight {
@@ -310,6 +314,7 @@ li {
   margin: 7px 0;
   position: relative;
   padding-right: 12px;
+  color: #565656;
 }
 li::before {
   content: "";
@@ -882,7 +887,7 @@ select option {
   border-radius: 10px !important;
 }
 .woocommerce-Reviews #comments .commentlist li::before {
-  display: none !important;
+  display: none;
 }
 .woocommerce-Reviews #comments .commentlist li .comment_container img {
   display: none !important;

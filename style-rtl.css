@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   line-height: 27px;
-  color: #565656;
+  color: #494949;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -247,6 +247,10 @@ p {
 
 .lightBorder {
   border: 1px solid #f0f5fc;
+}
+
+.lighterBorder {
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .bgLight {
@@ -310,6 +314,7 @@ li {
   margin: 7px 0;
   position: relative;
   padding-right: 12px;
+  color: #565656;
 }
 li::before {
   content: "";
@@ -645,6 +650,7 @@ select option {
 
 .mainHeaderBack {
   background-color: transparent;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
 }
 @media screen and (max-width: 768px) {
   .mainHeaderBack {
@@ -699,7 +705,6 @@ select option {
 }
 .mainHeaderBack .mainHeader .menuSection ul .current-menu-item a {
   color: #187dba !important;
-  border-bottom: 1px solid #187dba;
 }
 .mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children:hover ul {
   visibility: visible;
@@ -782,6 +787,7 @@ select option {
 
 .home .mainHeaderBack, .single-post .mainHeaderBack, .single-product .mainHeaderBack {
   background-color: #f4f7fe;
+  box-shadow: none;
 }
 
 .stickyHeaderParent {
@@ -1591,67 +1597,66 @@ select option {
   }
 }
 
-.comments-title {
+.comments-area .comments-title {
   text-align: center;
 }
-
-li {
+.comments-area li {
   margin: 0;
   padding-right: 0;
 }
-li::before {
+.comments-area li::before {
   display: none !important;
 }
-li .comment-body {
+.comments-area li .comment-body {
   background-color: #f4f7fe;
   padding: 25px;
 }
-li .comment-body .comment-meta {
+.comments-area li .comment-body .comment-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
-  li .comment-body .comment-meta {
+  .comments-area li .comment-body .comment-meta {
     align-items: normal;
     flex-direction: column;
     font-size: 12px;
   }
 }
-li .comment-body .comment-meta .comment-author {
+.comments-area li .comment-body .comment-meta .comment-author {
   display: flex;
   align-items: center;
 }
-li .comment-body .comment-meta .comment-author img {
+.comments-area li .comment-body .comment-meta .comment-author img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   margin: 0px 0px 5px 20px;
 }
 @media screen and (max-width: 480px) {
-  li .comment-body .comment-meta .comment-author .fn {
+  .comments-area li .comment-body .comment-meta .comment-author .fn {
     margin-left: 3px;
   }
 }
-li .comment-body .comment-meta .comment-metadata a time {
+.comments-area li .comment-body .comment-meta .comment-metadata a time {
   font-size: 14px;
   color: #828282;
 }
 @media screen and (max-width: 480px) {
-  li .comment-body .comment-content p {
+  .comments-area li .comment-body .comment-content p {
     font-size: 13px;
   }
 }
-li .children {
+.comments-area li .children {
   margin: 0;
   padding: 0;
 }
-li .children li {
+.comments-area li .children li {
   margin: 0;
   padding: 0;
 }
-li .children li .comment-body {
+.comments-area li .children li .comment-body {
   background-color: #ebf0fd;
   padding: 25px 65px 20px 20px;
 }
@@ -2237,4 +2242,61 @@ li .children li .comment-body {
 
 .lg-outer, .lg-outer * {
   direction: ltr !important;
+}
+
+.afterServicePageBack .afterServicePage .afterServicePageInner .sectionTwo, .afterServicePageBack .afterServicePage .afterServicePageInner .sectionThree {
+  margin-top: 20px;
+}
+
+.customerServicesBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.customerServicesBoxes .customerServicesBox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
+}
+.customerServicesBoxes .customerServicesBox:nth-child(1), .customerServicesBoxes .customerServicesBox:nth-child(2) {
+  width: 16%;
+  justify-content: center;
+}
+.customerServicesBoxes .customerServicesBox:nth-child(3) {
+  width: 16%;
+  padding-right: 30px;
+}
+.customerServicesBoxes .customerServicesBox:hover .customerServicesIconPart {
+  background-color: #166ea5;
+}
+.customerServicesBoxes .customerServicesBox .customerServicesTextPart {
+  display: flex;
+  flex-direction: column;
+}
+.customerServicesBoxes .customerServicesBox .customerServicesTextPart a {
+  cursor: pointer;
+  padding: 5px 0px;
+  transition: all 0.4s;
+}
+.customerServicesBoxes .customerServicesBox .customerServicesTextPart a:hover {
+  color: #4698c8;
+}
+.customerServicesBoxes .customerServicesBox .customerServicesTextPart a span {
+  font-size: 15.5px;
+  font-weight: 500;
+}
+.customerServicesBoxes .customerServicesBox .customerServicesIconPart {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #197dbb;
+  transition: all 0.4s;
+  top: -10px;
+  right: -20px;
+  position: absolute;
 }/*# sourceMappingURL=style-rtl.css.map */
