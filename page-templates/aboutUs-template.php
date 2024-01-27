@@ -10,7 +10,7 @@ get_header();
 <div class="aboutUsPageBack">
     <div class="aboutUsPage mainView">
         <div class="generalHeading highMargined centeredText bottomBorder">
-            <h1>درباره <div class="changeColorHeader">کارن طب</div></h1>
+            <h1>About <div class="changeColorHeader">KAREN TEB</div></h1>
             <span>کارن طب تجهیز آرا، تولید و عرضه کننده با کیفیت ترین تجهیزات پزشکی</span>
         </div>
         <div class="aboutUsSectionOne">

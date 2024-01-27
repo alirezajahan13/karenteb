@@ -191,12 +191,12 @@ function new_excerpt_more( $more ) {
 	return ' ... ';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-// add_action( 'wp', 'mageplaza_remove_sidebar_product_pages' );
-// function mageplaza_remove_sidebar_product_pages() {
-//   if ( is_product() ) {
-//   remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
-//   }
-// }
+add_action( 'wp', 'mageplaza_remove_sidebar_product_pages' );
+function mageplaza_remove_sidebar_product_pages() {
+  if ( is_product() ) {
+  remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+  }
+}
 /**
  * Remove WooCommerce breadcrumbs 
  */
