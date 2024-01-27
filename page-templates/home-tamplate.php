@@ -9,10 +9,10 @@ get_header();
     <div class="introSection sectionPadding mainView">
         <div class="introSectionDesc">
             <div class="generalHeading bigHeading highMargined">
-                <h1>شرکت <span>کارن طب</span> ، اولین تولید کننده دستگاه های کربوکسی و پلاسما</h1>
+                <h1><span>Karen Medical Group</span> Manufacturer of the Highest quality medical equipment</h1>
             </div>
-            <p class="">شـرکت کارن طب، با بهره‌مندی از متـخصصین مجرب، همواره در تلاش برای بومی‌سازی فناوری‌های پیشرفته و پیشگامی در زمینه فناوری‌های نوین بوده است. تیم دانش‌بنیان تحقیق و توسعه این شرکت توانسته است، با ادغام نوآوری‌های بی‌بـدیل و بومی‌سازی فناوری‌های روز دنیا، به دستاوردهای چـشمگیری در زمینه طراحی و تولید تجهیزات پزشکی دست یابد.</p>
-            <a class="generalButton outlineButton" href="https://karenmed.ir/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره کارن طب</a>
+            <p class="">Karen Teb Company, by using experienced specialists, has always been trying to localize advanced technologies and pioneer in recent medical innovations. The knowledge-based research and development team of this company has been able to achieve remarkable achievements in designing and producing medical equipment.</p>
+            <a class="generalButton outlineButton" href="">View Products</a>
         </div>
         <div class="introSectionImg"> 
             <video controls loop autoplay muted width="100%">
@@ -27,27 +27,27 @@ get_header();
     <div class="counterNumbersInner mainView">
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
             <div class="counterNumber"><span id="counter-1">85</span><span>%</span></div>
-            <div class="counterTitle">رضایت مشتری</div>
+            <div class="counterTitle">Satisfaction</div>
         </div>
         <!-- <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
             <div class="counterNumber"><span id="counter-2">16</span><span>+</span></div>
             <div class="counterTitle">کارن طب</div>
         </div> -->
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-            <div class="counterNumber"><span id="counter-3">2413</span><span>+</span></div>
-            <div class="counterTitle">نصب موفق</div>
+            <div class="counterNumber"><span>+</span><span id="counter-3">2413</span></div>
+            <div class="counterTitle">Installs</div>
         </div>
         <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-            <div class="counterNumber"><span id="counter-4">3786</span><span>+</span></div>
-            <div class="counterTitle">همکاری با پزشکان</div>
+            <div class="counterNumber"><span>+</span><span id="counter-4">3786</span></div>
+            <div class="counterTitle">Collaborations</div>
         </div>
     </div>
 </div>
 <div class="productsSectionHomeBack sectionPadding">
     <div class="productsSectionHome mainView">
         <div class="generalHeading highMargined centeredText">
-            <h2>جدیدترین محصولات کارن طب</h2>
-            <span>تولید محصولات با کیفیت مطابق با آخرین استانداردهای روز دنیا</span>
+            <h2>Our Latest Products</h2>
+            <span>Production of quality products with recent global standards</span>
         </div>
         <div class="productSwiperParent">
             <div class="swiper productsSwiper swiper-container  ">
@@ -97,22 +97,22 @@ get_header();
 <div class="serviceSectionHomeBack sectionPadding">
     <div class="serviceSectionHome mainView">
         <div class="generalHeading highMargined centeredText">
-            <h2>ارائه بهترین خدمات و بروز ترین روش ها</h2>
+            <h2>Providing the best and the most modern methods</h2>
         </div>
         <div class="serviceBoxParent extraHighMargined">
             <div class="serviceBoxs">
                 <div class="iconPart">
                     <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.984 2.542c.087.169.109.386.152.82.082.82.123 1.23.295 1.456a1 1 0 0 0 .929.384c.28-.037.6-.298 1.238-.82.337-.277.506-.415.687-.473a1 1 0 0 1 .702.035c.175.076.33.23.637.538l.894.894c.308.308.462.462.538.637a1 1 0 0 1 .035.702c-.058.181-.196.35-.472.687-.523.639-.784.958-.822 1.239a1 1 0 0 0 .385.928c.225.172.636.213 1.457.295.433.043.65.065.82.152a1 1 0 0 1 .47.521c.071.177.071.395.071.831v1.264c0 .436 0 .654-.07.83a1 1 0 0 1-.472.522c-.169.087-.386.109-.82.152-.82.082-1.23.123-1.456.295a1 1 0 0 0-.384.929c.038.28.299.6.821 1.238.276.337.414.505.472.687a1 1 0 0 1-.035.702c-.076.175-.23.329-.538.637l-.894.893c-.308.309-.462.463-.637.538a1 1 0 0 1-.702.035c-.181-.058-.35-.196-.687-.472-.639-.522-.958-.783-1.238-.82a1 1 0 0 0-.929.384c-.172.225-.213.635-.295 1.456-.043.434-.065.651-.152.82a1 1 0 0 1-.521.472c-.177.07-.395.07-.831.07h-1.264c-.436 0-.654 0-.83-.07a1 1 0 0 1-.522-.472c-.087-.169-.109-.386-.152-.82-.082-.82-.123-1.23-.295-1.456a1 1 0 0 0-.928-.384c-.281.037-.6.298-1.239.82-.337.277-.506.415-.687.473a1 1 0 0 1-.702-.035c-.175-.076-.33-.23-.637-.538l-.894-.894c-.308-.308-.462-.462-.538-.637a1 1 0 0 1-.035-.702c.058-.181.196-.35.472-.687.523-.639.784-.958.821-1.239a1 1 0 0 0-.384-.928c-.225-.172-.636-.213-1.457-.295-.433-.043-.65-.065-.82-.152a1 1 0 0 1-.47-.521C2 13.286 2 13.068 2 12.632v-1.264c0-.436 0-.654.07-.83a1 1 0 0 1 .472-.522c.169-.087.386-.109.82-.152.82-.082 1.231-.123 1.456-.295a1 1 0 0 0 .385-.928c-.038-.281-.3-.6-.822-1.24-.276-.337-.414-.505-.472-.687a1 1 0 0 1 .035-.702c.076-.174.23-.329.538-.637l.894-.893c.308-.308.462-.463.637-.538a1 1 0 0 1 .702-.035c.181.058.35.196.687.472.639.522.958.783 1.238.821a1 1 0 0 0 .93-.385c.17-.225.212-.635.294-1.456.043-.433.065-.65.152-.82a1 1 0 0 1 .521-.471c.177-.07.395-.07.831-.07h1.264c.436 0 .654 0 .83.07a1 1 0 0 1 .522.472ZM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" fill="#197dbb"/></svg>
                 </div>
-                <h3>تضمین کیفیت</h3>
-                <span class="lightParagraph">کارن طب با تولید محصولات باکیفیت و مطابق با آخرین استانداردهای روز دنیا، سعی بر جلب اعتماد مشتریان خود دارد.</span>
+                <h3>Quality Guarantee</h3>
+                <span class="lightParagraph">Karen Teb tries to gain the trust of its customers by producing quality products with the latest global standards.</span>
             </div>
             <div class="serviceBoxs">
                 <div class="iconPart">
                     <svg width="50" height="50" fill="#197dbb" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.003 413.483h249.375a13.125 13.125 0 0 0 0-26.25H151.003a13.125 13.125 0 0 1 0-26.25h249.375a13.125 13.125 0 0 0 0-26.25H151.003a52.5 52.5 0 0 0-52.5 52.5v26.25a52.5 52.5 0 0 0 52.5 52.5h249.375a13.125 13.125 0 0 0 0-26.25H151.003c-17.186-.271-17.307-25.902 0-26.25Zm262.494-118.136V59.134a13.117 13.117 0 0 0-13.117-13.117H164.124v262.466H400.36a13.136 13.136 0 0 0 13.136-13.136Zm-54.686-91.83h-140v-87.5h140ZM137.874 47.737a52.475 52.475 0 0 0-39.377 50.78v230.119a78.466 78.466 0 0 1 39.377-19.003Z"/></svg>
                 </div>
-                <h3>دانش و تخصص</h3>
-                <span class="lightParagraph">محصولات کارن طب با بهره‌گیری از تجربیات و نظرات متخصصین پوست، مو و زیبایی، طبق به‌روزترین دانش تخصصی دنیا تولید و به‌روزرسانی می‌شود.</span>
+                <h3>Knowledge and Expertise</h3>
+                <span class="lightParagraph">Karen Teb products are produced and updated with the most modern global knowledge by the experiences and opinions of experts.</span>
             </div>
             <div class="serviceBoxs">
                 <div class="iconPart">
