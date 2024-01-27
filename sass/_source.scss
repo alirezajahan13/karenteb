@@ -263,7 +263,7 @@ label{
 	display: block;
 	// margin-bottom: 15px;
 	font-size: 13px;
-	text-align: right;
+	text-align: left;
 	width: 100%;
 	// padding-right: 15px;
 }
@@ -272,6 +272,7 @@ input{
 	display: block;
 	width: 100%;
 	padding: 10px 20px;
+	margin-left: -10px;
 	&[type=text] , &[type=password] , &[type=email] , &[type=tel] , &[type=url]{
 		border: none;
 		background-color: $mainColorLight2;

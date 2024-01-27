@@ -374,7 +374,7 @@ li::before {
 label {
   display: block;
   font-size: 13px;
-  text-align: right;
+  text-align: left;
   width: 100%;
 }
 
@@ -383,6 +383,7 @@ input {
   display: block;
   width: 100%;
   padding: 10px 20px;
+  margin-left: -10px;
 }
 input[type=text], input[type=password], input[type=email], input[type=tel], input[type=url] {
   border: none;
