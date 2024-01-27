@@ -1,23 +1,24 @@
 <?php 
-
 /*
 Template Name: Home Template
 */
-
 get_header();
 ?>
 
 <div class="introSectionBack">
-    <div class="introSection mainView">
+    <div class="introSection sectionPadding mainView">
         <div class="introSectionDesc">
             <div class="generalHeading bigHeading highMargined">
-                <h1>تنها تولیدکننده دستگاه های <span>کربوکسی تراپی</span> و <span>پلاسماپن</span></h1>
+                <h1>شرکت <span>کارن طب</span> ، اولین تولید کننده دستگاه های کربوکسی و پلاسما</h1>
             </div>
-            <p class="lighterText">تولیدکننده دستگاه های کربوکسی تراپی و پلاسماپن و تجهیزات با کیفیت در ایران</p>
-            <a class="generalButton outlineButton" href="#">بیشتر بخوانید</a>
+            <p class="">شـرکت کارن طب، با بهره‌مندی از متـخصصین مجرب، همواره در تلاش برای بومی‌سازی فناوری‌های پیشرفته و پیشگامی در زمینه فناوری‌های نوین بوده است. تیم دانش‌بنیان تحقیق و توسعه این شرکت توانسته است، با ادغام نوآوری‌های بی‌بـدیل و بومی‌سازی فناوری‌های روز دنیا، به دستاوردهای چـشمگیری در زمینه طراحی و تولید تجهیزات پزشکی دست یابد.</p>
+            <a class="generalButton outlineButton" href="https://karenmed.ir/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره کارن طب</a>
         </div>
-        <div class="introSectionImg">
-            <img src="<?php echo get_template_directory_uri() ?>/img/banner-home.png" alt="کارن-طب"> 
+        <div class="introSectionImg"> 
+            <video controls loop autoplay muted width="100%">
+                <source src="<?php bloginfo('template_directory')?>/video/Main_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
 </div>
@@ -51,30 +52,34 @@ get_header();
         <div class="productSwiperParent">
             <div class="swiper productsSwiper swiper-container  ">
                 <div class="swiper-wrapper innerSwiper">
-                    <!-- <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div>
-                    <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div>
-                    <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div>
-                    <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div>
-                    <div class="swiper-slide"><img src="https://dummyimage.com/250x300/000/fff" alt=""></div> -->
-                    <?php 
-                    $args = array(
-                        'post_type'      => 'product',
-                        'posts_per_page' => 4,
-                    );
+                    <?php
+                        $tag_slug = 'جدیدترین-ها';
 
-                    $loop = new WP_Query($args);
+                        $args = array(
+                            'post_type'      => 'product',
+                            'posts_per_page' => 4,
+                            'tax_query'      => array(
+                                array(
+                                    'taxonomy' => 'product_tag',
+                                    'field'    => 'slug',
+                                    'terms'    => $tag_slug,
+                                ),
+                            ),
+                        );
 
-                    if ($loop->have_posts()) {
-                        while ($loop->have_posts()) : $loop->the_post(); ?>
-                            <div class="swiper-slide">
-                                <?php wc_get_template_part('content', 'product'); ?>
-                            </div>
-                        <?php endwhile;
-                    } else {
-                        echo '<div class="swiper-slide">' . __( 'No products found' ) . '</div>';
-                    }
+                        $loop = new WP_Query($args);
 
-                    wp_reset_postdata();
+                        if ($loop->have_posts()) {
+                            while ($loop->have_posts()) : $loop->the_post(); ?>
+                                <div class="swiper-slide">
+                                    <?php wc_get_template_part('content', 'product'); ?>
+                                </div>
+                            <?php endwhile;
+                        } else {
+                            echo '<div class="swiper-slide">' . esc_html__('No products found', 'your-text-domain') . '</div>';
+                        }
+
+                        wp_reset_postdata();
                     ?>
                 </div>
                 <!-- Add Pagination -->
@@ -134,20 +139,20 @@ get_header();
                 <h3>کربوکسی تراپی چیست؟</h3>
             </div>
             <p>کربوکسی تراپی در واقع یک نوع مزوتراپی است که به جای تزریق مایعات مزوتراپی از گاز دی اکسید کربن استفاده می‌شود. پزشک متخصص گاز co2 را در زیر پوست از طریق سوزن تزریق می کند. مکانیسم عمل کربوکسی تراپی از طریق بهبود گردش خون است که در نتیجه خاصیت ارتجاعی پوست را افزایش می‌دهد و اکسیژن رسانی به آن ناحیه را بهبود می‌دهد.</p>
-            <a class="generalButton noArrowButton" href="#">ثبت سفارش</a>
+            <a class="generalButton noArrowButton" href="https://karenmed.ir/product/%d8%af%d8%b3%d8%aa%da%af%d8%a7%d9%87-%da%a9%d8%b1%d8%a8%d9%88%da%a9%d8%b3%db%8c-%d8%aa%d8%b1%d8%a7%d9%be%db%8c-%da%a9%d8%a7%d8%b1%d9%86-%d8%b7%d8%a8/">ثبت سفارش</a>
         </div>
         <div class="descProductImg">
             <!-- <img src="<?php //echo get_template_directory_uri() ?>/img/banner-home.png" alt="کارن-طب">  -->
             <div class="swiper ProductImgSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                       <img src="<?php echo get_template_directory_uri() ?>/img/دستگاه-کربوسی-300x300.jpg" alt=""> 
+                       <img src="<?php echo get_template_directory_uri() ?>/img/new/Carboxy-montage.jpg" alt="دستگاه-کربوکسی"> 
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/دستگاه-پلاسما-پن-کارن-طب-300x300.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/new/Plasma-montage.jpg" alt="دستگاه-پلاسما">
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/فیس-پد-300x300.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/new/Facepad-montage.jpg" alt="فیس-پد">
                     </div>
                 </div>
             </div>
@@ -221,7 +226,7 @@ get_header();
         <div class="sectionRight">
             <h3>درخواست دمو رایگان</h3>
             <p>می‌توانید پیش از خرید محصول، برای مشاهده نحوه کارکرد دستگاه و بررسی موارد فنی و نوع عملکرد دستگاه، نسخه دمو آن را به صورت رایگان و در بازه زمانی محدودی در اختیار داشته باشید و میزان اثر گذاری آن را به چشم ببینید. همچنین کارشناسان ما برای آموزش متد کار با دستگاه، همراه شما هستند. برای دریافت نسخه دمو رایگان محصولات، فرم را تکمیل فرمایید تا با شما تماس بگیریم.</p>
-            <?php echo do_shortcode('[contact-form-7 id="8ac65fa" title="دمو رایگان صفحه اصلی"]') ?>
+            <?php echo do_shortcode('[contact-form-7 id="1911" title="دمو رایگان صفحه اصلی"]') ?>
         </div>
         <div class="sectionLeft">
             <img src="<?php echo get_template_directory_uri() ?>/img/new-transparent-for-request-min-1.png" alt="کارن-طب">
@@ -271,14 +276,11 @@ get_header();
                 'orderby' => 'date',
                 'order' => 'DESC',
             );
-
             $recent_posts_query = new WP_Query($recent_posts_args);
-
             // Display the 4 most recent posts with title and full-size thumbnail
             if ($recent_posts_query->have_posts()) {
                 echo '<div class="recentPostsHome">';
                 echo '<div class="recentPostsHomeList">';
-                
                 // Loop through the recent posts
                 while ($recent_posts_query->have_posts()) {
                     $recent_posts_query->the_post();
@@ -291,16 +293,13 @@ get_header();
                     </a>
                     <?php
                 }
-
                 echo '</div>';
                 echo '</div>';
             }
-
             // Reset post data
             wp_reset_postdata();
         ?>
     </div>
 </div>
-
 
 <?php get_footer(); ?>

@@ -4,7 +4,6 @@ Template Name: A-S-Service Template
 */
 get_header();
 ?>
-
 <div class="afterServicePageBack">
     <div class="afterServicePage mainView">
         <div class="generalHeading highMargined centeredText bottomBorder">
@@ -37,7 +36,7 @@ get_header();
                     </div>
                     <div class="customerServicesTextPart">
                         <a href="tel://09129729702"><span>09129729702</span></a>
-                        <a href="tel://02126201172"><span>021-26201172</span></a>
+                        <!-- <a href="tel://02126201172"><span>021-26201172</span></a> -->
                         <a href="tel://02145302"><span>021-45302</span></a>
                     </div>
                 </div>
@@ -49,6 +48,7 @@ get_header();
                         <a href="mailto:info@karenmed.ir" target="_blank"><span>ایمیل</span></a>
                         <a href="https://www.instagram.com/karenmedical" target="_blank"><span>اینستاگرام</span></a>
                         <a href="https://api.whatsapp.com/send?phone=989129729702" target="_blank"><span>واتس اپ</span></a>
+                        <a href="https://t.me/+989129729702" target="_blank"><span>تلگرام</span></a>
                     </div>
                 </div>
                 <div class="customerServicesBox lowRadius mediumPadding">
@@ -63,5 +63,4 @@ get_header();
         </div>
     </div>
 </div>
-
 <?php get_footer(); ?>

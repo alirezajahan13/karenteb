@@ -28,7 +28,7 @@
                     li{
                         margin: 0 !important;
                         padding: 0 !important;
-                        width: 30%;
+                        width: 20%;
                         &::before{
                             display: none;
                         }
@@ -119,11 +119,14 @@
                     }
                     .ratingSinglePart , .commentSinglePart{
                         display: flex;
-                        align-items: center;
+                        // align-items: center;
                         span{
                             display: block;
                             color: $textColorLight;
 
+                        }
+                        svg{
+                            margin-left: 3px;
                         }
                     }
                 }
@@ -235,6 +238,7 @@
                 border: 1px solid $mainColorLight2 !important;
                 padding: 10px !important;
                 border-radius: 10px !important;
+                background: #f7f7f7!important;
                 &::before{
                     display: none;
                 }
@@ -346,4 +350,117 @@
             }
         }
     }
+}
+.woocommerce-Reviews{
+    padding: 10px;
+    .comment-reply-title{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    #comments{
+        display: flex;
+        justify-content: center;
+        .woocommerce-Reviews-title{
+            display: none;
+        }
+        .commentlist{
+            margin: 15px 0 30px 0 !important;
+            padding: 20px;
+            border-radius: 15px;
+            @include xs{
+                padding: 10px;
+            }
+            li{
+                &::before{
+                    content: none !important;
+                }
+                .children{
+                    @include xs{
+                        margin: 20px 0 0 0 !important;
+                    }
+                }
+                .comment_container{
+                    img{
+                        border-radius: 100%;
+                        border: none !important;
+                        background: none !important;
+                        width: 40px !important;
+                        top: 25px !important;
+                    }
+                    .comment-text{
+                        border: none !important;
+                        @include xs{
+                            margin-right: 30px !important;
+                        }
+                        .star-rating{
+                            @include xs{
+                                font-size: 11px;
+                            }
+                        }
+                        .description{
+                            p{
+                                @include xs{
+                                    font-size: 13.5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .comment-respond{
+        .comment-form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: auto;
+            .comment-notes{
+                width: 60%;
+                @include sm{
+                    width: 100%;
+                }
+            }
+            .comment-form-rating{
+                width: 30%;
+                @include sm{
+                    width: 100%;
+                }
+            }
+            .comment-form-author , .comment-form-email{
+                width: 48%;
+                @include sm{
+                    width: 100%;
+                }
+            }
+            .comment-form-comment{
+                width: 100%;
+                textarea{
+                    margin: 0 !important;
+                    height: 200px !important;
+                }
+            }
+            .comment-form-cookies-consent{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                label{
+                    margin-bottom: 0;
+                }
+                #wp-comment-cookies-consent{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+.star-rating span:before,
+.star-rating::before,
+p.stars a:hover:after, 
+p.stars a:after {
+    color: #ffde6b !important;
+    // letter-spacing: 1px; 
 }

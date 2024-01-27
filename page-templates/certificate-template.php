@@ -14,7 +14,7 @@ get_header();
         <div class="certificateSectionOne">
             <div class="textBox">
                 <p class="justified">گواهینامه‌ها، افتخارات و پروانه ساخت محصولات شرکت دانش بنیان کارن طب از این قسمت قابل پیگیری است. کارگروه دانش بنیان تحقیق و توسعه کارن طب، با بهره‌گیری از تجربیات و نظرات متخصصین مجرب در شاخه‌های علوم مختلف، همواره متعهد به ارائه بهترین و به‌روزترین راهکارها به پزشکان و متخصصین است. امیدواریم که تولید محصولات با کیفیت مطابق با آخرین استانداردها و نیز صـادرات محصولات دانش بـنیان در منطقه، گامی کوچک در راستـای توسعه اقتصادی کشور و سربلندی ایران عزیزمان باشد.</p>
-                <a class="generalButton outlineButton" href="#">ارتباط با ما</a>
+                <a class="generalButton outlineButton" href="https://karenmed.ir/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7%d9%85%d8%a7/">ارتباط با ما</a>
             </div>
             <div class="ImagesPart">
                 <a href="<?php echo get_template_directory_uri()?>/img/certificate/lg1.jpg">

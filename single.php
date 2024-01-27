@@ -6,46 +6,36 @@
  *
  * @package karenteb
  */
-
 get_header();
 ?>
-
 	<main id="primary" class="site-main">
-
 		<?php
 		while ( have_posts() ) :
 			the_post();
-
 			get_template_part( 'template-parts/content', get_post_type() );
-
 			// the_post_navigation(
 			// 	array(
 			// 		'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'karenteb' ) . '</span> <span class="nav-title">%title</span>',
 			// 		'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'karenteb' ) . '</span> <span class="nav-title">%title</span>',
 			// 	)
 			// );
-				
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
-			
 		endwhile; // End of the loop.
 		?>
 		<?php
 			// Add this code to display related posts with title and thumbnail
 			function display_related_posts() {
 				global $post;
-
 				// Get the post categories
 				$categories = get_the_category($post->ID);
-
 				if ($categories) {
 					$category_ids = array();
 					foreach ($categories as $category) {
 						$category_ids[] = $category->term_id;
 					}
-
 					// Query for related posts
 					$related_posts_args = array(
 						'category__in' => $category_ids,
@@ -53,9 +43,7 @@ get_header();
 						'posts_per_page' => 3, // You can adjust the number of related posts to display
 						'ignore_sticky_posts' => 1
 					);
-
 					$related_posts_query = new WP_Query($related_posts_args);
-
 					// Display related posts with title and thumbnail
 					if ($related_posts_query->have_posts()) {
 						echo '<div class="relatedPostsInSingle sectionPadding">';
@@ -74,21 +62,17 @@ get_header();
 							<?php
 						}
 						echo '</div>';
-						echo '<a class="generalButton outlineButton readMoreInSingle" href="#">دیدن همه</a>';
+						echo '<a class="generalButton outlineButton readMoreInSingle" href="https://karenmed.ir/blog/">دیدن همه</a>';
 						echo '</div>';
 					}
-
 					// Reset post data
 					wp_reset_postdata();
 				}
 			}
-
 			// Call the function to display related posts
 			display_related_posts();
 		?>
-
 	</main><!-- #main -->
-
 <?php
 // get_sidebar();
 get_footer();

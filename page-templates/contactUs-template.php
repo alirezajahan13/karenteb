@@ -18,7 +18,7 @@ get_header();
                 </div>
                 <div class="customerServicesTextPart">
                     <a href="tel://09129729702"><span>09129729702</span></a>
-                    <a href="tel://02126201172"><span>021-26201172</span></a>
+                    <!-- <a href="tel://02126201172"><span>021-26201172</span></a> -->
                     <a href="tel://02145302"><span>021-45302</span></a>
                 </div>
             </div>
@@ -28,8 +28,9 @@ get_header();
                 </div>
                 <div class="customerServicesTextPart">
                     <a href="mailto:info@karenmed.ir" target="_blank"><span>ایمیل</span></a>
-                    <a href="https://www.instagram.com/karenmedical" target="_blank"><span>اینستاگرام</span></a>
+                    <a href="https://www.instagram.com/karenmed_ir?igsh=Z2Y3bG5wN3JreXF0" target="_blank"><span>اینستاگرام</span></a>
                     <a href="https://api.whatsapp.com/send?phone=989129729702" target="_blank"><span>واتس اپ</span></a>
+                    <a href="https://t.me/+989129729702" target="_blank"><span>تلگرام</span></a>
                 </div>
             </div>
             <div class="customerServicesBox lowRadius mediumPadding">
@@ -43,7 +44,7 @@ get_header();
         </div>
         <div class="contactUsSectionTwo">
             <div class="SectionLRight">
-                <?php echo do_shortcode('[contact-form-7 id="2179101" title="فرم تماس با ما"]') ?>
+                <?php echo do_shortcode('[contact-form-7 id="1912" title="فرم تماس با ما"]') ?>
             </div>
             <div class="SectionLeft">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6473.902755644978!2d51.412052!3d35.7765707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0792eec009bf%3A0x37bab448d467d35c!2z2LTYsdqp2Kog2qnYp9ix2YYg2LfYqA!5e0!3m2!1sen!2s!4v1699166753807!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -86,6 +87,5 @@ get_header();
         </div> -->
     </div>
 </div>
-
 
 <?php get_footer(); ?>

@@ -1,17 +1,18 @@
 var $ = jQuery;
-
-
 var swiper = new Swiper(".productsSwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
-    // freeMode: true,
+    freeMode: true,
+    autoplay: {
+      delay: 4000,
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
         0: {
-          slidesPerView: 1,  
+          slidesPerView: 1.2,  
         },
         768: {
           slidesPerView: 2,
@@ -23,7 +24,6 @@ var swiper = new Swiper(".productsSwiper", {
         },
       },
 });
-
 var swiper = new Swiper(".ProductImgSwiper", {
   effect: "cards",
   grabCursor: true,
