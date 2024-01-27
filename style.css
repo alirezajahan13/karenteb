@@ -374,7 +374,7 @@ li::before {
 label {
   display: block;
   font-size: 13px;
-  text-align: right;
+  text-align: left;
   width: 100%;
 }
 
@@ -383,6 +383,7 @@ input {
   display: block;
   width: 100%;
   padding: 10px 20px;
+  margin-left: -10px;
 }
 input[type=text], input[type=password], input[type=email], input[type=tel], input[type=url] {
   border: none;
@@ -1306,11 +1307,11 @@ select option {
 .aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex .aboutUsSections {
-  width: 35%;
+  width: 48%;
   flex-direction: column;
   display: flex;
 }
@@ -1336,7 +1337,7 @@ select option {
 }
 .aboutUsSectionHomeBack .aboutUsSectionHome .aboutUsSectionFlex .aboutUsSections .aboutUsP span {
   color: #565656;
-  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .freeDemoSectionHomeBack .freeDemoSectionHome {

@@ -595,10 +595,10 @@
         .aboutUsSectionFlex{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             .aboutUsSections{
-                width: 35%;
+                width: 48%;
                 flex-direction: column;
                 display: flex;
                 @include xs{
@@ -621,7 +621,7 @@
                     }
                     span{
                         color: $textColorLowSat;
-                        margin-right: 8px;
+                        margin-left: 8px;
                     }
                 }
             }
