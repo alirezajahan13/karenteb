@@ -123,7 +123,7 @@ add_action( 'widgets_init', 'karenteb_widgets_init' );
  */
 function karenteb_scripts() {
 	wp_enqueue_style( 'karenteb-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'karenteb-style', 'rtl', 'replace' );
+	// wp_style_add_data( 'karenteb-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'swiper-style', get_template_directory_uri().'/swiper/swiper-bundle.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'lightgallery-style', get_template_directory_uri() . '/lg/css/lightgallery-bundle.css', array(), _S_VERSION );
 	wp_enqueue_script('jquery');

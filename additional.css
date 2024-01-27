@@ -65,7 +65,7 @@
 }
 body {
   font-family: danaweb !important;
-  direction: rtl !important;
+  direction: ltr !important;
   margin: 0;
   overflow-x: hidden !important;
   width: 100% !important;
