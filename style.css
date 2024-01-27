@@ -666,6 +666,7 @@ select option {
 .mainHeaderBack .mainHeader {
   display: flex;
   align-items: center;
+  padding: 10px 0;
 }
 @media screen and (max-width: 768px) {
   .mainHeaderBack .mainHeader {
@@ -680,14 +681,18 @@ select option {
     margin-left: 0px !important;
   }
 }
+.mainHeaderBack .mainHeader .logoSection img {
+  width: 100px;
+}
 @media screen and (max-width: 768px) {
-  .mainHeaderBack .mainHeader .logoSection svg {
+  .mainHeaderBack .mainHeader .logoSection img {
     height: 55px;
     width: 75px;
   }
 }
 .mainHeaderBack .mainHeader .menuSection {
-  margin-left: auto;
+  margin-right: auto;
+  margin-left: 30px;
 }
 @media screen and (max-width: 768px) {
   .mainHeaderBack .mainHeader .menuSection {
@@ -781,7 +786,7 @@ select option {
   align-items: center;
 }
 .mainHeaderBack .mainHeader a span {
-  margin: 5px 0px 0px 5px;
+  margin: 5px 5px 0px 0px;
 }
 @media screen and (max-width: 768px) {
   .mainHeaderBack .mainHeader .callNumberHeader {
@@ -813,12 +818,14 @@ select option {
   margin: 0;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
 }
-.stickyHeaderParent .mainHeaderBack .mainHeader .logoSection svg {
-  height: 70px;
+.stickyHeaderParent .mainHeaderBack .mainHeader {
+  padding: 10px 0;
+}
+.stickyHeaderParent .mainHeaderBack .mainHeader .logoSection img {
   width: 90px;
 }
 @media screen and (max-width: 480px) {
-  .stickyHeaderParent .mainHeaderBack .mainHeader .logoSection svg {
+  .stickyHeaderParent .mainHeaderBack .mainHeader .logoSection img {
     height: 50px;
     width: 70px;
   }
@@ -994,12 +1001,12 @@ select option {
     width: 100%;
   }
 }
-.mainFooterBack .mainFooter .footerColumn1 svg {
+.mainFooterBack .mainFooter .footerColumn1 img {
   height: 70px;
   margin: 15px 0;
 }
 @media screen and (max-width: 480px) {
-  .mainFooterBack .mainFooter .footerColumn1 svg {
+  .mainFooterBack .mainFooter .footerColumn1 img {
     height: 50px;
   }
 }
@@ -2057,6 +2064,10 @@ select option {
 }
 .contactUsPageBack .contactUsPage .contactUsSectionTwo .SectionLRight {
   width: 40%;
+}
+.contactUsPageBack .contactUsPage .contactUsSectionTwo .SectionLRight label {
+  direction: ltr !important;
+  display: inline;
 }
 @media screen and (max-width: 480px) {
   .contactUsPageBack .contactUsPage .contactUsSectionTwo .SectionLRight {

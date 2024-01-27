@@ -8,8 +8,8 @@ get_header();
 <div class="contactUsPageBack">
     <div class="contactUsPage mainView">
         <div class="generalHeading highMargined centeredText bottomBorder">
-            <h1>تماس با <div class="changeColorHeader">کارن طب</div></h1>
-            <span>با ما در ارتباط باشید</span>
+            <h1>CONTACT <div class="changeColorHeader">CAREN TEB</div></h1>
+            <span>Be in touch with us</span>
         </div>
         <div class="customerServicesBoxes highMargined">
             <div class="customerServicesBox lowRadius mediumPadding">
@@ -27,10 +27,10 @@ get_header();
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="25" height="25"><path fill="#fff" d="M5.93 25.11h15.84a1 1 0 0 1 .62.21L25 27.41V14.05a2 2 0 0 0-2-2H5.93a2 2 0 0 0-2 2v9.06a2 2 0 0 0 2 2Zm4.73-8.71a1.93 1.93 0 0 1 1-1.67 1.91 1.91 0 0 1 1.92 0l3.75 2a2 2 0 0 1 0 3.42l-3.75 2a1.92 1.92 0 0 1-.93.24 2 2 0 0 1-1-.27 1.94 1.94 0 0 1-1-1.68ZM19.44 49l2.08 1.64V38.69a1 1 0 0 0-1-1H4.45a1 1 0 0 0-1 1v9.09a1 1 0 0 0 1 1h14.37a1 1 0 0 1 .62.22ZM7.8 44.54a1.26 1.26 0 1 1 1.26-1.26 1.26 1.26 0 0 1-1.26 1.26Zm5 0a1.26 1.26 0 1 1 1.26-1.26 1.26 1.26 0 0 1-1.26 1.26Zm5 0a1.26 1.26 0 1 1 1.26-1.26 1.26 1.26 0 0 1-1.26 1.26ZM32 47.06a1 1 0 0 1-.62.22 1.08 1.08 0 0 1-.43-.1 1 1 0 0 1-.57-.9v-21a4 4 0 0 1 4-4h10.44v-14a3 3 0 0 0-3-3H16.21a3 3 0 0 0-3 3v2.79H23a4 4 0 0 1 4 4v15.4a1 1 0 0 1-.56.9 1 1 0 0 1-.44.1 1 1 0 0 1-.62-.22l-4-3.14h-8.17v8.58h7.31a3 3 0 0 1 3 3v14a1 1 0 0 1-.56.9 1.13 1.13 0 0 1-.44.1 1 1 0 0 1-.62-.22l-3.43-2.7h-5.26v6a3 3 0 0 0 3 3h25.61a3 3 0 0 0 3-3V42.89h-7.5ZM26 7.71a1 1 0 0 1 0-2h6a1 1 0 1 1 0 2Zm32.55 15.53H34.41a2 2 0 0 0-2 2v19l3.94-3.1a1 1 0 0 1 .62-.22h21.58a2 2 0 0 0 2-2V25.24a2 2 0 0 0-2-2Zm-4 6.23a1 1 0 0 1-2 0V27h-12v6.6l2.9-2.35a1 1 0 0 1 1.22 0l1.76 1.29 2.63-3a1 1 0 0 1 .69-.34 1 1 0 0 1 .73.25l3.78 3.38s.08.12.13.18a1.1 1.1 0 0 1 .09.14.94.94 0 0 1 0 .16 1.42 1.42 0 0 1 0 .22v4.57a1 1 0 0 1-1 1h-14a1 1 0 0 1-1-1V26a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Zm-41.84-9-.08-4 3.69 2Zm27.8 15.68L44 33.29l1.87 1.38a1 1 0 0 0 1.34-.15l2.57-2.91L52.5 34v3.1h-12Z" data-name="Social-Media" class="svgShape"/></svg>
                 </div>
                 <div class="customerServicesTextPart">
-                    <a href="mailto:info@karenmed.ir" target="_blank"><span>ایمیل</span></a>
-                    <a href="https://www.instagram.com/karenmed_ir?igsh=Z2Y3bG5wN3JreXF0" target="_blank"><span>اینستاگرام</span></a>
-                    <a href="https://api.whatsapp.com/send?phone=989129729702" target="_blank"><span>واتس اپ</span></a>
-                    <a href="https://t.me/+989129729702" target="_blank"><span>تلگرام</span></a>
+                    <a href="mailto:info@karenmed.ir" target="_blank"><span>Email</span></a>
+                    <a href="https://www.instagram.com/karenmed_ir?igsh=Z2Y3bG5wN3JreXF0" target="_blank"><span>Instagram</span></a>
+                    <a href="https://api.whatsapp.com/send?phone=989129729702" target="_blank"><span>Whatsapp</span></a>
+                    <a href="https://t.me/+989129729702" target="_blank"><span>Telegram</span></a>
                 </div>
             </div>
             <div class="customerServicesBox lowRadius mediumPadding">
@@ -38,13 +38,13 @@ get_header();
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 128" width="25" height="25" fill="#fff"><path d="M96 48c0 34.912-40.615 75.928-42.342 77.657a8.002 8.002 0 0 1-11.314 0C40.615 123.927 0 82.912 0 48a48 48 0 0 1 96 0zM48 72a24 24 0 1 0-24-24 23.999 23.999 0 0 0 24 24z" data-name="Layer 2" class="svgShape"/></svg>
                 </div>
                 <div class="customerServicesTextPart">
-                    <a href="https://maps.app.goo.gl/PdjX44XJRwa2vfsN7"><span>آدرس: جردن، خیابان سلطانی (سایه)، پلاک 67، واحد 5</span></a>
+                    <a href="https://maps.app.goo.gl/PdjX44XJRwa2vfsN7"><span>Address :  Tehran, Soltani St, No. 67</span></a>
                 </div>
             </div>
         </div>
         <div class="contactUsSectionTwo">
             <div class="SectionLRight">
-                <?php echo do_shortcode('[contact-form-7 id="1912" title="فرم تماس با ما"]') ?>
+                <?php echo do_shortcode('[contact-form-7 id="2333847" title="contact us form"]') ?>
             </div>
             <div class="SectionLeft">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6473.902755644978!2d51.412052!3d35.7765707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0792eec009bf%3A0x37bab448d467d35c!2z2LTYsdqp2Kog2qnYp9ix2YYg2LfYqA!5e0!3m2!1sen!2s!4v1699166753807!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -14,6 +14,7 @@
     .mainHeader{
         display: flex;
         align-items: center;
+        padding: 10px 0;
         @include sm{
             flex-flow: row-reverse;
         }
@@ -22,7 +23,8 @@
             @include sm{
                 margin-left: 0px !important;
             }
-            svg{
+            img{
+                width: 100px;
                 @include sm{
                     height: 55px;
                     width: 75px;
@@ -30,7 +32,8 @@
             }
         }
         .menuSection{
-            margin-left: auto;
+            margin-right: auto;
+            margin-left: 30px;
             @include sm{
                 display: none;
             }
@@ -128,7 +131,7 @@
             display: flex;
             align-items: center;
             span{
-                margin: 5px 0px 0px 5px;
+                margin: 5px 5px 0px 0px;
             }
         }
         .callNumberHeader{
@@ -160,9 +163,9 @@
         margin: 0;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,.07);
         .mainHeader{
+            padding: 10px 0;
             .logoSection{
-                svg{
-                    height: 70px;
+                img{
                     width: 90px;
                     @include xs{
                         height: 50px;
@@ -317,7 +320,7 @@
             @include xs{
                 width: 100%;
             }
-            svg{
+            img{
                 height: 70px;
                 margin: 15px 0;
                 @include xs{
@@ -1439,6 +1442,10 @@
             margin-top: 40px;
             .SectionLRight{
                 width: 40%;
+                label{
+                    direction: ltr !important;
+                    display: inline;
+                }
                 @include xs{
                     width: 100%;
                 }
