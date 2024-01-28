@@ -71,8 +71,8 @@
 				</a>
 			</div> -->
 			<a class="callNumberHeader generalButton noArrowButton bgDarkButton" href="tel://02145302">
-				<span>021-45302</span>
 				<svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#d4dfeb" d="M12.2 10c-1.1-.1-1.7 1.4-2.5 1.8C8.4 12.5 6 10 6 10S3.5 7.6 4.1 6.3c.5-.8 2-1.4 1.9-2.5-.1-1-2.3-4.6-3.4-3.6C.2 2.4 0 3.3 0 5.1c-.1 3.1 3.9 7 3.9 7 .4.4 3.9 4 7 3.9 1.8 0 2.7-.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"/></svg>
+				<span>021-45302</span>
 			</a>
 		</div>
 	</div>
@@ -101,8 +101,8 @@
 					</a> -->
 				</div>
 				<a class="callNumberHeader generalButton noArrowButton bgDarkButton" href="tel://02145302">
-					<span>021-45302</span>
 					<svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#d4dfeb" d="M12.2 10c-1.1-.1-1.7 1.4-2.5 1.8C8.4 12.5 6 10 6 10S3.5 7.6 4.1 6.3c.5-.8 2-1.4 1.9-2.5-.1-1-2.3-4.6-3.4-3.6C.2 2.4 0 3.3 0 5.1c-.1 3.1 3.9 7 3.9 7 .4.4 3.9 4 7 3.9 1.8 0 2.7-.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"/></svg>
+					<span>021-45302</span>
 				</a>
 			</div>
 		</div>
